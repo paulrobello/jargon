@@ -1,0 +1,2127 @@
+1,one
+10,ten
+100,one hundred
+11,eleven
+12,twelve
+13,thirteen
+14,fourteen
+15,fifteen
+16,sixteen
+17,seventeen
+18,eighteen
+19,nineteen
+1993,one thousand nine hundred and ninety three by the Gregorian calendar
+1994,one thousand nine hundred and ninety four by the Gregorian calendar
+1995,one thousand nine hundred and ninety five by the Gregorian calendar
+1996,one thousand nine hundred and ninety six by the Gregorian calendar
+1997,one thousand nine hundred and ninety seven by the Gregorian calendar
+1998,one thousand nine hundred and ninety eight by the Gregorian calendar
+1999,one thousand nine hundred and ninety nine by the Gregorian calendar
+2,two
+20,twenty
+2000,two thousand by the Gregorian calendar
+2001,two thousand and one by the Gregorian calendar
+2002,two thousand and two by the Gregorian calendar
+2003,two thousand and three by the Gregorian calendar
+2004,two thousand and four by the Gregorian calendar
+21,twenty one
+22,twenty two
+23,twenty three
+24,twenty four
+25,twenty five
+26,twenty six
+27,twenty seven
+28,twenty eight
+29,twenty nine
+3,three
+30,thirty
+31,thirty one
+32,thirty two
+33,thirty three
+34,thirty four
+35,thirty five
+36,thirty six
+37,thirty seven
+38,thirty eight
+39,thirty nine
+4,four
+40,forty
+41,forty one
+42,forty two
+43,forty three
+44,forty four
+45,forty five
+46,forty six
+47,forty seven
+48,forty eight
+49,forty nine
+5,five
+50,fifty
+51,fifty one
+52,fifty two
+53,fifty three
+54,fifty four
+55,fifty five
+56,fifty six
+57,fifty seven
+58,fifty eight
+59,fifty nine
+6,six
+60,sixty
+61,sixty one
+62,sixty two
+63,sixty three
+64,sixty four
+65,sixty five
+66,sixty six
+67,sixty seven
+68,sixty eight
+69,sixty nine
+7,seven
+70,seventy
+71,seventy one
+72,seventy two
+73,seventy three
+74,seventy four
+75,seventy five
+76,seventy six
+77,seventy seven 
+78,seventy eight
+79,seventy nine
+8,eight
+80,eighty
+81,eighty one
+82,eighty two
+83,eighty three
+84,eighty four
+85,eighty five
+86,eighty six
+87,eighty seven
+88,eighty eight
+89,eighty nine
+9,nine
+90,ninety
+91,ninety one
+92,ninety two
+93,ninety three
+94,ninety four
+95,ninety five
+96,ninety six
+97,ninety seven
+98,ninety eight
+99,ninety nine
+a1,absolute best
+abandon,evacuate,forsake
+abandons,evacuates,forsakes
+abilities,capabilities,natural facilities,acquired facilities,attributes
+ability,capability,natural facility,acquired facility
+able,competent
+abnormal,anomalistic
+abolish,abrogate,eliminate
+abolished,abrogated,eliminated
+abolishes,abrogates,eliminates
+abrupt,precipitant
+abruptly,precipitately
+absence,elsewhither,non-attendance
+absenteeism,illegitimate absence from work
+absolute,autarchic,totalitarian
+absolutely,totally and completely,ipso facto
+absorb,assimilate
+absorbed,assimilated
+absorption,assimilation
+abuse,maltreat
+abused,maltreated
+abuses,maltreats
+abusive,vituperative
+accept,acquiesce
+acceptable,absolutely performance standard,unobjectionable
+acceptance,acquiescence
+accepted,acquiesced
+accountant,money-counting troll,number cruncher
+accountants,money-counting trolls,number crunchers
+acquisition,neocolonial merger
+acquisitions,neocolonial mergers
+activities,stimulating pursuits
+activity,stimulating pursuit
+ad,openly positive promotional public pronouncement
+addition,super-junction,augmentation
+administration,sovereign state
+administrations,sovereign states
+administrative,organizational
+administrators,impresarios,bureaucrats
+ads,openly positive promotional public pronouncements
+adult,mature
+adults,mature company
+advance,progress forward
+advanced,highly developed
+advancement,status elevating,increase in status and box size
+advancing,progressing forward
+advantage,beneficial factor
+advantages,beneficial factors
+adventure,hazardous enterprise
+adventures,hazardous enterprises
+adversities,calamitous events
+adversity,calamitous event
+advertise,promotionally pronounce
+advertisement,openly positive promotional public pronouncement
+advertisements,openly positive promotional public pronouncements
+advertises,promotionally pronounces
+advertising,positively promoting publicly
+advice,unsolicited opinions,exhortation
+advise,counsel,recommend
+advising,recommending,counseling
+aerobic,cardiovascular
+aerobics,cardiovascular exercises
+affection,affinity without the possibility of garnering anything meaningful in return
+affirm,pronounce
+affirmed,pronounced
+affirms,pronounces
+after,at a subsequent time
+afternoon,post-lunch time period
+afterwards,subsequently
+again,once more
+against,versus
+age,maturity,seniority
+agenda,compendium of issues to be addressed
+agendas,compendiums of issues to be addressed,agendae
+ages,maturities,seniorities
+agree,mutually understand
+agreed,mutually understood
+agreeing,mutually agreeing
+agreement,overt parallelism,mutual understanding
+agreements,overt parallelisms
+agrees,mutually understands
+air,atmospheric strata
+aircraft,above-ground transportation
+airport,central location for aircraft takeoff and landing
+airports,central locations for aircraft takeoff and landing
+although,in spite of the fact that
+always,at all times,without exception
+america,the Land of the Free and Brave
+americas,the Lands of the Free and Brave
+analysis,interrelations study by separation
+analyst,interrelations study expert
+analysts,interrelations study experts
+analyze,scrutinize
+analyzed,scrutinized
+analyzes,scrutinizes
+and,in addition to
+anew,de novo
+angry,hostile and confrontational,unprofessional
+animal,creature,Kingdom Animalia
+animals,Kingdom Animalia
+annoying,pestiferous
+appraisal,evaluation based on years of experience in the field
+approval,confirmation,imprimatur
+approvals,confirmations,imprimaturs
+approve,take kindly to
+approved,took kindly to
+approves,takes kindly to
+approving,taking kindly to
+april,the fourth month of the Gregorian calendar
+argue,quibble,have a healthy conversation
+argued,quibbled,had a healthy conversation
+argues,quibbles,has a healthy conversation
+argument,healthy conversation
+arguments,healthy conversations
+arrange,orchestrate
+arranged,orchestrated
+arranges,orchestrates
+arrival,disembarkation
+arrivals,disembarkations
+arrogant,hoity-toity,smarty-pants
+article,individual element
+articles,individual elements
+artist,limner,depicter
+artists,limners,depicters
+asap,as soon as possible
+asian,of Asian descent
+ask,solicit,request,inquire
+asked,solicited,requested,inquired
+asking,soliciting,requesting,inquiring
+asks,solicits,requests,inquires
+assignment,assigned work based on perceived skill
+assignments,assigned work based on perceived skill
+assistant,lieutenant
+assistants,lieutenants
+association,confederacy,posse
+associations,confederacies,posses
+assurance,affirmation
+assurances,affirmations
+ate,acquired culinary assets
+atm,automated teller machine
+atms,automated teller machines
+attend,manage
+attended,managed
+attending,managing
+attends,manages
+attention,circumspection
+audit,extensive financial review
+audits,extensive financial reviews
+august,the eighth month of the Gregorian calendar
+authorities,God-like commands
+authority,God-like command
+auto,automobile
+autos,automobiles
+autumn,late summer
+available,procurable
+avoid,employ subterfuge to
+avoided,employed subterfuge to
+avoiding,employing subterfuge to
+avoids,employs subterfuge to
+award,transfer ceremoniously
+awarded,transferred ceremoniously
+awarding,transferring ceremoniously
+awards,transfers ceremoniously
+awful,not optimum
+bad,sub-optimum
+basement,workspace without the distraction of windows
+basic,fundamental
+basis,foundation
+bastard,wedlock-less son
+bathroom,lavatory designated by gender
+bathrooms,lavatories designated by gender
+batmobiling,putting up emotional shields
+battery,electric current storage/generating system
+beach,sandy embankment
+beached,grounded on sandy embankment
+because,whereas,due to the fact that,for the reason that,in light of the fact that
+beer,lager,ale
+beers,lagers,ales
+before,heretofore,in advance of
+began,initiated,commenced
+begin,initiate,commence
+beginner,neophyte
+beginners,neophytes
+beginning,embarking,raising of the curtain,initiating,first rattle out of the box,commencement
+begins,initiates,commences
+begun,initiated,commenced
+behavior,comportment,conduct
+behaviors,comportments,conducts
+below,hereinafter
+benefit,vouchsafement
+benefits,vouchsafements
+best,optimum,very best
+better,superior
+bewilder,nonplus
+bewildered,nonplussed
+bewildering,nonplusing
+bid,proposed terms
+bids,proposed terms
+bird,avian
+birds,avians
+birthday,day of birth
+birthdays,days of birth
+black,burnt umber,midnight black
+bloated,flatulent
+blocked,barricaded
+board,flat plank
+bodies,physical frames
+body,physical frame
+bonus,additional benefit,frequently heard of but seldom seen incentive
+book,tome,volume
+books,tomes,volumes
+booth,enclosed compartment
+booths,enclosed compartments
+boss,pointy-haired person of seeming authority,pointy-haired supervisor
+bosses,pointy-haired persons of seeming authority,pointy-haired supervisors
+boyfriend,significant other,partner
+boyfriends,significant others,partners
+brainstorm,cranial monsoon
+brainstorming,cranial typhooning
+branch,off-shoot,tribe,sub-division,agency,organ
+branches,off-shoots,tribes,sub-divisions,agencies,organs
+breakfast,first consumption of the day
+breakfasts,first consumptions of the day
+bribe,palm oil,hush money,subsidize
+bribes,hush monies,subsidies
+bridge,span
+brief,concise
+briefcase,business luggage,hidden-office supply containment unit
+briefcases,hidden-office supply containment units
+briefing,condensed transfer of data
+briefs,condensed statement
+budget,financial quantitative statement
+budgetary,income and expenditure control
+budgeted,financially preplanned
+budgeting,formulating a quantitative statement
+budgets,financial quantitative statements
+bug,feature anomaly
+bugs,feature anomalies
+build,construct
+building,constructing
+builds,constructs
+built,constructed
+bulletin,semi-accurate material concerning late-breaking useless information
+bulletins,semi-accurate materials concerning late-breaking useless information
+bus,interurban transportation
+business,activity pursued as a livelihood
+businesses,livelihood endeavors
+buzzword,witticism employed to appear to be in-the-know
+buzzwords,witticisms employed to appear to be in-the-know
+cake,ritualistic celebratory sugar laden food stuff
+cakes,ritualistic celebratory sugar laden food stuffs
+calculator,hand-held computational device
+calculators,hand-held computational devices
+calendar,chronological compendium
+calendars,chronological compendiums
+came,arrived
+capacities,competencies
+capacity,competency
+car,automobile
+card,slip of paper
+care,heedfulness
+career,seeming pattern of activity pursued as a livelihood
+careers,seeming patterns of activities pursued as a livelihood
+carrier,beast of burden
+carriers,beasts of burden
+cars,automobiles
+cash,paper monetary system
+casual,uninhibited
+cat,feline
+cats,felines
+cause,conditionally determine
+causes,determiners
+cd,compact disc
+cdrom,compact disc read-only memory
+celebrate,gather to celebrate and party down
+celebrates,gathers to celebrate and party down
+celebrating,gathering to celebrate and party down
+censor,forbid
+censored,forbidden
+censure,excoriate
+censures,excoriates
+censuring,excoriating
+ceo,Chief Executive Officer
+ceos,Chief Executive Officers
+cereal,carbohydrates served with calcium fortified beverage
+cereals,multiple carbohydrates served with calcium fortified beverage
+chain,shackle
+chained,shackled
+chaining,shackling
+chains,shackles
+chairman,ultimate high chieftain
+challenging,formidable
+chance,probability
+chances,probabilities
+change,transubstantiate,restructure,alter
+changed,transubstantiated,restructured,altered
+changes,restructures
+changing,transubstantiating,restructuring,altering
+chase,pursuit
+chased,pursued
+chases,pursues
+chasing,pursuing
+Chicago,the Windy City
+child,offspring
+childbirth,parturition
+choice,election,optionality,selection
+choices,elections,optionalities,selections
+choose,select,opt for
+chooses,selects,opts for
+choosing,selecting,opting for
+chose,selected,opted for
+christmas,Traditional Fourth Quarter Sales Booster Day
+church,house of worship
+clean,free from foulness,unadulterated
+click,depress mouse key
+clicks,successive depressions of the mouse key
+client,revenue source
+clientele,long term customer base
+clients,revenue sources
+clock,time keeping device
+clocked,measured by a time keeping device
+clocks,time keeping devices
+closure,stoppage
+closures,stoppages
+clothes,attire
+cock,rooster
+cocks,roosters
+code,building blocks
+coffee,dark invigorating beverage,java
+coffees,dark invigorating beverages
+cold,frigid,less than freezing
+collaborate,temporarily subsume differences to effect mutually beneficial results
+college,institution of higher learning
+colleges,institutions of higher learning
+color,tincture
+colors,tinctures
+combination,amalgamation
+combinations,amalgamations
+come,arrive
+comes,arrives
+coming,arriving
+commerce,activity pursued as a livelihood
+commercial,mercantile
+commercials,mercantiles
+commit,assert allegiance
+commits,asserts allegiance
+committed,a psychiatric facility resident
+committee,official investigating body
+committees,official investigating bodies
+committing,asserting allegiance
+common,commonplace
+commute,daily trek to place of employment
+commutes,daily treks to place of employment
+companies,business enterprises,collectives
+company,business enterprise,collective
+competition,virulent opposition in marketplace
+competitor,virulent opponent in marketplace
+computer,computational integrated circuit machine,square headed friend
+computers,computational integrated circuit machines,square headed friends
+conceal,mystify
+concealed,mystified
+conceals,mystifies
+concise,exact and to the point
+concisely,exactly and to the point
+conducted,managed
+conducts,manages
+conference,consultation meeting
+conferences,consultation meetings
+confuse,obfuscate
+confused,obfuscated
+confuses,obfuscates
+confusing,obfuscating
+consult,undertake analysis
+consultant,noncombatant
+consulted,undertook analysis
+consulting,undertaking analysis
+consults,undertakes analysis
+contract,enforceable agreement
+contracts,enforceable agreements
+contradict,controvert
+contradicted,controverted
+contradicts,controverts
+control,influence
+controlled,influenced
+controls,influences
+convention,gathering of like-minded people in a large hall
+conventions,gatherings of like-minded people in large halls
+convergence,focalization
+convergences,focalizations
+conversation,discourse,dialog
+conversations,discourses,dialogs
+conversely,vice versa
+conversion,transmutation
+conversions,transmutations
+cook,perform culinary magic
+cooked,performed culinary magic
+cooking,performing culinary magic
+cooks,performing culinary magic
+cool,frigid,below average temperature
+cooler,refrigeration dispensing unit
+cooperate,toil in unison
+cooperated,toiled in unison
+cooperates,toils in unison
+cooperating,toiling in unison
+cooperation,unilateral operation
+cooperations,unilateral operations
+coordinate,function harmoniously
+coordinates,functions harmoniously
+coordinator,organizational control administrator
+coordinators,organizational control administrators
+copied,replicated,duplicated
+copier,document duplication and toner-leaking device
+copiers,document duplication and toner-leaking devices
+copies,duplicates,replicates
+copy,duplicate,replicate
+copying,replicating,duplicating
+cordless,devoid of cord
+corporate,commercial entity friendly
+corporation,commercial entity
+corporations,commercial entities
+correct,conforming to accepted standards
+correction,error eradicating
+corrupt,utterly reprehensible in behavior,rotten,unhealthy,villainous
+cost,acquisition price
+costly,expensive,overpriced
+costs,acquisition prices
+countries,sovereignties
+country,sovereignty
+coupon,negotiable certificate
+coupons,negotiable certificates
+courage,self-possessed confidence and resolution
+courageous,self-possessed of confidence and resolution
+courier,messenger of official and urgent business
+couriers,messengers of official and urgent business
+courtesy,excellent manners
+cove,sheltered bay of the sea
+covering,overlaying
+coves,sheltered bays of the sea
+crash,suddenly fail to continue
+crashed,suddenly impacted
+crashes,suddenly impacts
+crazy,non compos mentis
+create,produce,manufacture
+created,produced
+creates,produces,manufactures
+creating,producing
+cries,vociferations
+critical,severely important
+cross,transverse
+crossed,traversed
+crosses,transverses
+crossing,traversing
+cry,vociferation
+crying,vociferating
+cubicle,prison,box
+cubicles,prisons,boxes
+cue,dead giveaway
+cues,dead giveaways
+curiosity,interestedness
+curious,inquisitive
+currently,at the present time
+customer,goods and services purchaser,target audience member
+customers,goods and services purchasers,target audience members
+cutback,bloodletting
+cute,delightfully pretty
+cyan,greenish blue
+cyclops,most excellent software developer Cyclops
+damn,dad-burn,dad-blame,dog-gone
+damned,cursed
+dance,promenade
+danced,promenaded
+dances,promenades
+dancing,promenading
+danger,fleeting cause for alarm
+dangerous,trembling in the balance
+dangers,fleeting causes for alarm
+data,Commander Data
+daughter,brilliant beautiful child,offspring
+day,24 hour period
+days,24 hour periods
+deadline,arbitrary non-negotiable line in the sand
+deadlines,arbitrary non-negotiable lines in the sand
+deal,transaction involving a level of assumed trust
+dealer,distribution technician
+deals,transactions involving a level of assumed trust
+dear,dearest and most cherished
+death,last muster
+deaths,last musters
+deceive,flimflam
+deceived,flimflamed
+deceives,flimflams
+december,the last month of the Gregorian calendar
+deception,flimflamery,fraudulence
+deceptions,flimflameries,fraudulences
+decision,whim,lark
+decisions,whims,larks
+declare,profess
+declared,professed
+declares,professes
+declaring,professing
+decrease,subtraction
+decreased,substantially subtracted
+decreases,subtracts
+decreasing,substantially subtracting
+deduction,retrenchment
+deductions,retrenchments
+deep,abstruse,abysmal
+deeper,more abysmal
+deepest,most incredibly abysmal
+delegate,pass-off work onto the rest of the team
+delegated,passed-off work onto the rest of the team
+delegates,passes-off work onto the rest of the team
+delegating,passing-off work onto the rest of the team
+delicious,pleasing to the taste buds
+demo,features demonstration
+demos,features demonstrates
+demotion,downward reclassification
+denies,negates,contradicts
+denounce,excoriate
+denounced,excoriated
+denounces,excoriates
+deny,negate,contradict
+department,locality,sphere of activity,bailiwick,territory,province
+departments,localities,spheres of activity,bailiwicks,territories,provinces
+departure,removal
+departures,removals
+describe,descriptively narrate,characterize
+described,descriptively narrated,characterized
+describes,descriptively narrates,characterizes
+description,detailed account,circumstantial account,characterization
+descriptions,detailed account,circumstantial accounts,characterizations
+design,arrangement of parts and details
+designed,invented and arranged
+designing,creatively inventing and arranging
+desk,writing table,work station
+desks,writing tables,work stations
+desktop,computer-interface-based-on-real-world-desk-like-environment
+detail,minute particular
+detailed,minutely itemized
+details,minute particulars
+developer,outside expediting unit
+developers,outside expediting units
+development,the evolutionary journey to fulfillment process
+device,apparatus,contraption,contrivance
+devices,apparatuses,contraptions,contrivances
+dick,man-about-town
+dicks,men-about-town
+difference,dissimilarity
+differences,dissimilarities
+different,varied and numerous
+dike,rock embankment
+dikes,rock embankments
+dilbert,super-popular Dilbert
+dilemma,situation requiring equally unfavorable choices
+dilemmas,situations requiring equally unfavorable choices
+dimension,spatial measurement
+dimensions,spatial measurements
+dimwit,incredibly slow witted in-duh-vidual
+dimwits,incredibly slow witted in-duh-viduals
+dinner,end of day consumption
+dinners,end of day culinary asset acquisitions
+dinosaur,gigantic extinct beast
+dinosaurs,gigantic extinct beasts
+direction,inclination,stewardship
+directions,inclinations,instructions
+directive,central authority command
+directives,commands from central authority
+directly,instantly and exactly
+dirt,filthy contemptible soiling substance
+dirty,soiled
+disagree,do not entirely agree
+disagreed,did not entirely agree
+disagreement,moment of idea contention
+disagreements,moments of idea contention
+disagrees,does not entirely agree
+discipline,pain or confinement for wrongdoing,castigation,chastisement
+disclosure,denouement
+disclosures,denouements
+discord,healthy dialogue
+discount,sale price reduction
+discounted,sale price reduced
+discounts,sale price reductions
+discuss,verbally examine
+discussed,verbally examined
+discusses,verbally examines
+discussing,verbally examining
+discussion,verbal examination
+disease,inability to work an 80 hour week
+diseased,infected with an inability to work an 80 hour week
+diseases,inability's to work an 80 hour week
+disgruntled,immune to termination because of imminent threat of lawsuit
+dishonest,less than honest
+dishonestly,less than honestly
+disk,electronic data storage component
+disks,electronic data storage components
+dislocated,repositioned
+dislocates,repositions
+dislocation,transplantation,cart away
+disobedience,insurrection
+disorder,sub-optimal organization,olla-podrida,what the cat brought in
+dissuade,contraindicate
+dissuaded,contraindicated
+dissuades,contraindicates
+distance,spatial measurement
+distances,spatial measurements
+distribute,disseminate
+distributed,disseminated
+distributes,disseminates
+distributing,disseminating
+distribution,dissemination
+doc,document
+docs,documents
+doctor,medical treatment provider
+document,critical piece of paper
+documentation,collected transcriptions
+documents,critical pieces of paper
+dog,canine,pet of the canine variety
+dogbert,Personified-Canine-Creature-Who-Oozes-Sarcasm
+dogs,canines
+dominate,masterly dominate
+dominated,masterly dominated
+dominates,masterly dominates
+dominating,masterly dominating
+done,completed
+donut,round sugary food stuff,non-economic incentive
+donuts,round sugary food items,non-economic incentives
+door,room portal
+doors,room portals
+doughnut,round sugary food stuff,non-economic incentive
+doughnuts,round sugary food stuffs,non-economic incentives
+downsize,change the span of the corporation's organizational chart,rightsize
+downsizes,changes the span of the corporation's organizational chart,rightsizes
+downsizing,changing the span of the corporation's organizational chart
+drama,histrionics
+drawing,etching
+drawings,etchings
+dreamworks,the supremely imaginative DreamWorks,the cleverly innovative DreamWorks
+dress,attire
+dries,mummifies
+drone,office chair-warmer
+drones,office chair-warmers
+dry,mummified,arid
+drying,mummifying
+dryness,mummification
+durability,instransmutability
+durable,instransmutable
+durable,intransmutable
+duties,obligations
+duty,obligation
+e,electronically
+eased,alleviated
+eases,alleviates
+easing,alleviating
+eat,acquire culinary assets,consume
+eaten,masticated
+eating,masticating
+eats,acquires culinary assets
+effect,to bring about
+efficiency,really speedy and generally useful status
+efficient,really speedy and generally useful
+elder,reverend mature one
+elders,reverend mature ones
+electric,electromagnetic
+electricity,electromagnetism
+electronic,electromagnetic component based
+electronics,electromagnetic components
+elegant,discriminating,harmoniously simple
+elegantly,discriminatingly
+elevator,vertical transportation unit
+elevators,vertical transportation units
+email,electronically transferred communication
+emails,electronically transferred communications
+emergencies,eventualities
+emergency,eventuality
+employee,foot soldier,lackey,office chair-warmer
+employees,foot soldiers,lackeys,office chair-warmers
+employer,master,commander
+employers,masters,commanders
+enclosure,circumvallation
+enclosures,circumvallations
+endowment,subvention
+endowments,subventions
+enemies,antagonists
+enemy,antagonist
+engine,primary machine component
+engineer,primary machine component professional
+engineers,primary machine component professionals
+engines,primary machine components
+entirely,totally and completely,in toto
+envies,holds resentment aroused by desire for improved status
+envy,resentment aroused by desire for improved status
+equipment,equipage,accouterments,paraphernalia
+erase,obliterate,delete
+erased,obliterated,deleted
+eraser,obliterator
+erasers,obliterators
+erases,obliterates,deletes
+erasing,obliterating,deleting
+error,unavoidable mishap
+errors,unavoidable mishaps
+escalated,dramatically mounted
+escalates,dramatically mounts
+escalating,dramatically mounting
+escalator,moving staircase
+escalators,moving staircases
+espionage,the art of stealthy observation and reporting
+estimate,approximate calculation
+estimated,approximately calculated
+estimates,approximate calculations
+estimating,approximately calculating
+evaluate,make a value judgment of
+evaluated,made a value judgment of
+evaluates,makes a value judgment of
+evaluating,making a value judgment of
+evaluation,value judgment
+evaluations,value judgements
+evening,pre-night,post midday meal,cocktail hour
+evenings,cocktail hours
+event,eventuality
+events,eventualities
+everyone,the whole kit and caboodle
+exaggeration,expanded hyperbole
+exaggerations,expanded hyperbole
+example,representation
+examples,representations
+excited,aquiver
+executive,mogul
+executives,moguls
+exertion,keyboard exercises
+exit,egress
+exited,egressed
+exits,egresses
+expand,amplify
+expanded,amplified
+expanding,amplifying
+expands,amplifies
+expansion,amplification
+expansions,amplifications
+expense,expenditure
+expensed,declared
+expenses,expenditures
+expensive,unduly cost value-added
+expert,connoisseur
+experts,connoisseurs
+extemporaneous,ad libidum
+eye,ocular organ
+eyes,ocular organs
+facilities,physical assets
+facility,physical assets
+facsimile,unreadable transmission
+facsimiles,unreadable transmissions
+factories,manufacturing plants
+factory,manufacturing plant
+fail,decline
+failed,declined
+failing,declining
+fails,declines
+failure,extraordinary stroke of bad luck,unfortunate outcome,disappointment
+failures,extraordinary strokes of bad luck,unfortunate outcomes,disappointments
+false,fallacious
+falsehood,less than accurate statement
+falsehoods,less than accurate statements
+familiar,conversant
+families,family units,preferred customers,relatives
+family,family unit,preferred customer,relative
+fanzine,amateur produced fan magazine
+far,not near
+father,paternal unit
+fathers,paternal units
+fatigue,exhaustion,status quo
+favorite,most favored
+fax,facsimile,reduplication
+faxes,facsimiles,reduplications
+february,the second month of the Gregorian calendar
+fed-ex,Federal Express
+female,woman body
+females,woman bodies
+fertile,productive
+finally,in the final analysis
+fine,excellent
+finer,more excellent
+finest,most excellent
+fire,terminate,cease to employ
+fired,downsized,ceased to employ
+fires,terminates,ceases to employ
+firing,terminating,ceasing to employ
+first,foremost
+fish,ikhthus
+flowers,floral bouquet
+flu,influenza
+focus,rallying point
+fold,plicature
+fond,partial
+food,nourishment
+fool,ninnyhammer,boob,loon
+fools,ninnyhammers,boobs,loons
+foresight,predeliberation
+forethought,preliminary deliberation
+forever,ad infinitum,in perpetuity
+forget,do not remember,have a momentary lapse of memory
+forgetting,having a momentary lapse of memory
+forgot,did not remember,had a momentary lapse of memory
+forgotten,unremembered
+format,presentation and language
+forward,toward the front
+foul,noisome
+frankly,to be very frank,to tell the truth
+friday,the fifth day of the week
+fridays,the fifth days of the week
+friend,sympathizer
+friends,sympathizers
+front,frontal
+fuck,fornicate
+fucked,fornicated
+fucking,fornicating
+fun,amusement,merriment
+future,sometime forward hence
+futures,legal gambling for profit
+fy,fiscal year
+fyi,for your information
+gadget,technical thingumadoodle
+gadgets,technical thingumadoodles
+game,amusement activity,diversion activity
+games,amusement activities,diversion activities
+garbage,waste,refuse
+gas,fuel
+gesture,beau geste
+gestures,beau gestes
+girlfriend,significant other,partner
+girlfriends,significant others,partners
+glad,showing joy and pleasure
+glass,translucent super-cooled liquid
+glasses,frame held translucent super-cooled liquid polished lens
+glue,permanent bonding chemical
+goal,objective
+goals,objectives
+god,omnipotent being
+godless,wicked and impious
+gods,omnipotent beings
+goldfish,decorative freshwater Asian aquarium fish
+gone,carried away
+goner,doomed one
+gonna,going to
+good,terrific
+goodness,charity
+goods,commodities
+gorgeous,dazzlingly magnificent
+grammar,syntax
+gratitude,sense of obligation
+great,splendiferous
+greatness,magnitude
+groceries,foodstuff
+grocery,foodstuff
+grow,improve,expand
+growing,improving,expanding
+grows,improves,expands
+growth,improvement,expansion
+guess,supposition
+guesses,suppositions
+guessing,supposing
+guidance,well intended direction
+guitar,fretted neck string musical instrument
+guitars,fretted neck string musical instruments
+gym,gymnasium,health club,exercise facility
+habit,long continued practice,characteristic behavior
+habits,long continued practices,characteristic behaviors
+hair,the-more-you-have-the-better-off-you-are accessory
+halo,nimbus
+happy,ecstatic,elated,upbeat
+hardware,physical equipment
+harmless,innocuous
+hasn't,has not
+he,he is a man who
+head,topmost body appendage
+heads,topmost body appendages
+headset,topmost body appendage audio listening device
+health,ability to work an 80 hour week
+heaven,the abode of God
+height,prominence,qualification
+heights,ultimate prominence
+hell,habitation of fallen angels,habitat of the damned
+hello,salutations
+here,here now
+hey,greetings and salutations
+hi,greetings
+high,elevated
+higher,more elevated
+highest,supreme elevation
+hire,employ,engage
+hired,employed,engaged
+hires,employs,engages
+hiring,employing,engaging
+histories,detailed chronicles
+history,detailed chronicle
+holiday,high festival day free of work
+holidays,high festival days free of work
+home,sleep and bathing location,squalid shelter,abode,residence
+homes,sleep and bathing locations,squalid shelters
+homosexual,gay or lesbian
+homosexuals,gays or lesbians
+honest,undissembling,unpretending,candid
+honorable,noblesse oblige
+hope,desire
+hoped,desired
+hopefully,it is sincerely to be hoped that
+hopes,desires
+hoping,desiring
+hospital,healthcare institution
+hot,hot as Georgia asphalt,warm as fresh toast
+hottest,ultimate super sizzling
+hour,sixty minute period of time
+hourly,every sixty minutes
+hours,sixty minute periods of time
+how,in what way
+however,however and in any event
+human,mortal
+humans,mortals
+humor,witticism
+hurt,negatively impact
+hurting,negatively impacting
+hurts,negatively impacts
+husband,significant other,partner,spouse
+husbands,significant others,partners,spouses
+icon,symbolic representation
+idea,concept,formative notion
+ideas,concepts,formative notions
+idiot,incredibly slow witted in-duh-vidual,mentally impaired person
+idiots,incredibly slow witted in-duh-viduals,mentally impaired person
+ignorance,uninformed state
+ignore,do not pay attention to
+ignored,did not pay attention to
+ignores,does not pay attention to
+ignoring,not paying attention to
+I'm,I am
+imagination,unmarketable skill
+implement,put into immediate action
+implementing,putting into immediate action
+implements,puts into immediate action
+importance,major significance
+important,unusually paradigm rocking
+impulse,impromptu
+incentive,inducement,goad
+incentives,inducements,goads
+income,blood money
+incomes,blood monies
+increase,aggrandize
+increased,aggrandized
+increases,aggrandizes
+indian,of Native American descent
+indians,of Native Americans descent
+indicated,denoted
+indicates,denotes
+indicating,denoting
+indication,denotation
+indications,denotations
+industries,activities pursued as a livelihood
+industry,activity pursued as a livelihood
+infighting,contentious rivalry
+infinite,immeasurably huge,unthinkably immense
+infinity,fourth -dimensional
+info,information
+informal,colloquial
+informally,colloquially
+information,enlightenment,intelligence,noteworthy and worthwhile communication
+initiative,pluckiness
+input,selected communication
+inquire,investigate
+inquired,investigated
+inquires,investigations
+inquiring,investigating
+inquiry,inquisition
+inspiration,breathtaking state of awe and energy and creativity
+instruction,recommended order of how to proceed
+instructions,recommended order of how to proceed
+instrument,apparatus,contrivance
+instruments,apparatuses,contrivances
+intellect,faculties
+intelligence,secret information
+intend,prospectively mean to
+intended,prospectively meant to
+intending,prospectively meaning to
+intends,prospectively means to
+intense,exquisite
+interchange,battledore and shuttlecock
+intercom,workplace walkie-talkie
+intercoms,workplace walkie-talkies
+interesting,tantalizing
+interface,one-on-one
+intern,short-term foot soldier
+interns,short-term foot soldiers
+interview,interface audition for chance placement in cubicle
+interviews,interface auditions for chance placement in cubicle
+intuition,sense of smell
+invade,imbue
+invention,newly hatched creation
+inventions,newly hatched creations
+investment,expenditure involving risk
+investments,expenditures involving risk
+invoice,compensation due document
+invoices,compensation due documents
+involve,implicate
+involved,implicated
+involvement,commitment in the form of participation
+involves,implicates
+isdn,fast digital phone lines
+island,seagirt
+islands,seagirts
+isn't,is not
+issue,important topic
+issues,important topics
+item,object in question
+items,objects in question
+janitor,sanitary engineer
+janitors,sanitary engineers
+january,the first month of the Gregorian calendar
+jargonator,Most Excellent Word Bending Jargon Inserting Text Modification Device
+jealous,resentful and envious
+jealousy,resentfulness disguised as friendliness
+job,activity pursued as a livelihood
+jobs,activities pursued as a livelihood
+joy,nirvana
+july,the seventh month of the Gregorian calendar
+june,the sixth month of the Gregorian calendar
+keep,continue
+keeps,continues
+key,lock access device
+keyboard,keys to success
+keys,lock access devices
+know,have knowledge of
+knowledge,acquisition of information
+land,real estate
+lands,real estates
+language,lingua,patter,vernacular
+languages,linguas,patters,vernaculars
+laptop,portable computational integrated circuit machine enabling telecommuting
+late,on schedule with a few exceptions,not very often on time,delayed,tardy
+latency,delitescence
+latter,second of the two mentioned
+laughter,merriment
+law,rule
+laws,rules
+lawyer,attorney at law,counselor
+lawyers,attorneys at law,counselors
+layer,substratum
+layers,substratums
+leader,voice and authority for the group
+leaf,flattened plant structure attached to a stem
+learn,acquire knowledge,novitiate
+learned,acquired knowledge
+leave,depart
+leaving,departing
+left,departed
+legal,statutory
+lesson,curriculum
+lessons,curriculum
+letter,written character,monogram,correspondence
+letters,written characters,monograms,correspondences
+level,horizontally positioned area
+levels,horizontally positioned areas
+liberal,progressive
+liberals,progressives
+lied,misrepresented,fabricated,prevaricated
+life,viableness
+light,luminous energy
+lighten,alleviate
+lighten,alleviate
+lighting,luminous energy expenditures
+lights,luminous energies
+liked,appreciated,positively received
+likes,appreciates,positively receives
+liking,positively receiving,appreciating
+limit,line of demarcation
+limits,lines of demarcation
+line,continuous mark
+lines,continuous marks
+link,nexus
+liquor,distilled liqueur,hooch,snake medicine,liquid courage,corpse reviver
+list,compendium
+listed,inventoried
+lists,compendiums
+lit,illuminated
+lite,low calorie
+little,minute,miniscule,diminutive
+lives,viablenesses
+locale,location
+locales,locations
+location,whereabouts
+locations,various whereabouts
+longitude,angular distance from the prime meridian
+loophole,evasion tactic
+loopholes,evasion tactics
+loose,not secured
+lose,mislay,misappropriate
+loss,sub-optimal return
+losses,casualties
+lost,misplaced,misappropriated
+lot,large amount
+lots,large amounts
+loud,plangent
+luck,stroke of good fortune
+lucky,fortunate
+lunch,midday consumption of proteins and carbohydrates
+lunches,midday consumptions of proteins and carbohydrates
+machine,device with or without moving parts
+machines,devices with or without moving parts
+magenta,purplish red
+mail,transferred communication
+mailed,physically transferred
+mailing,physically transferring
+mails,transferred communications
+main,primarily important
+mainframe,primary cash consuming computing device
+maintain,preserve in good condition
+maintained,preserved in good condition
+maintaining,preserving in good condition
+maintenance,condition preservation
+makers,creators
+male,monsieur
+males,messieurs
+man,male human,person of the male gender
+management,self-important operations entities
+manager,self-important member of the department unit
+managers,self-important members of the department unit
+mankind,the aristocrat amongst the animals
+manual,booklet addressing every question and concern but the present one
+manuals,booklets addressing every question and concern but the present one
+march,the third month of the Gregorian calendar
+marketability,marketplace performance capability
+marketable,propaganda friendly
+marketed,propagandized
+marketing,propaganda and illusion casting
+mass,proportional quantity
+masses,proportional quantities
+may,the fifth month of the Gregorian calendar
+maybe,possibly
+mba,Masters of Business Administration
+me,the undersigned
+meal,culinary asset acquisition,repast
+meals,culinary asset acquisitions,repasts
+means,wherewithal
+meatspace,the physical world
+mediocrity,acceptable state
+meet,rendezvous
+meeting,symposium,gathering
+meetings,symposiums,gatherings
+member,tendril
+members,tendrils
+memo,memorandum
+memories,snippets of retained knowledge
+memory,retained knowledge
+memos,memorandums,memoranda
+men,male humans
+mentor,seemingly helpful advice giver
+mentoring,seemingly helpful advice-giving
+mentors,seemingly helpful advice givers
+message,implication,communication
+messages,implications,communications
+messenger,intelligencer,errand boy or girl
+messengers,intelligencers,errand boys or girls
+messy,disheveled,unkempt
+method,mode of execution
+methods,modes of execution
+middle,centrality
+mindful,attentive
+minds,intellects
+minimal,conservative
+minimum,lowest accepted standard
+minimums,lowest accepted standards
+minute,hallway meeting's length of time
+minutes,more than one hallway meeting's length of time
+mirror,looking glass
+mirrors,looking glasses
+misappropriate,abscond with
+misappropriated,absconded with
+misrepresented,perverted
+mistake,error,miscalculation
+mistaken,erroneous
+misuse,profanation
+misuses,profanations
+moderation,keep within bounds
+modern,impressively up to date
+moisture,humidity
+monday,the first day of the week
+mondays,the first days of the week
+money,medium of exchange,currency,lucre,wampum,bread,mazuma,moola
+monies,mediums of exchange,currencies
+monitor,visual display system
+monitoring,spying on,paying close attention to
+monitors,visual display systems
+month,four week period
+monthly,quad weekly
+months,four week periods
+moon,natural satellite of Earth
+moonlight,electromagnetic radiation from the natural satellite of Earth
+moonlighting,making ends meet
+moons,natural satellites of Earth
+morale,esprit de corps ,willingness to work without rewards
+moreover,moreover and in any event
+morning,pre-noon,before the midday meal
+mornings,times before
+mother,maternal unit
+mothers,maternal units
+motion,motive power
+motions,motive powers
+motivate,inspire performance
+motivated,inspired performance
+motivates,inspires performance
+motivating,inspiring performance
+motivation,willingness to work
+motive,the why and wherefore,rationale
+motives,the whys and wherefores,rationales
+motto,mantra
+movie,film,piece of cinema
+movies,films,cinema
+multimedia,poly-functional information and or entertainment based capability
+mushroom,fungus
+mushrooms,fungi
+music,arrangement
+mute,taciturn
+myself,myself personally
+name,nomenclature,moniker
+names,nomenclatures,monikers
+necessary,indispensable
+necessity,necessary requirement
+need,require,necessitate
+needed,required,necessitated
+needing,requiring,necessitating
+needs,requires,necessitates
+neglect,disregard
+neglected,disregarded
+neglecting,disregarding
+negligence,less than reasonable diligence
+negotiate,diplomatically navigate
+negotiated,diplomatically navigated
+negotiating,diplomatically exploring the possibilities
+negotiation,diplomatic exploration of the possibilities
+negotiations,diplomatic explorations of the possibilities
+network,complex interconnected system
+networking,self-advancing
+networks,complex interconnected systems
+neutral,nonaligned,noninterventionist
+new,non-old,unfamiliar,rejuvenated
+news,intelligence,communiqué
+newsletter,frivolous correspondence
+newsletters,frivolous correspondences
+nice,pleasant
+night,shank of the afternoon,nocturnal
+nights,shanks of the afternoon
+no,negative
+noon,midday meal,midday
+noted,recognized
+november,the eleventh month of the Gregorian calendar
+now,immediately,at the present time
+number,amount or quantity denoted
+numbers,amounts or quantities denoted
+objective,supreme purpose
+ocean,herring pond
+oceans,herring ponds
+october,the tenth month of the Gregorian calendar
+offer,proffer
+offered,proffered
+offering,proffering
+offers,proffers
+office,work location,place of employment
+offices,work locations
+oil,pomade
+oils,pomades
+old,cobwebs of antiquity
+only,exclusively,solely
+opened,unsealed
+opening,ever yawning loophole
+openings,ever yawning loopholes
+openly,fragrantly
+opens,unseals
+opportunities,value adding opportunities
+opportunity,value adding opportunity
+oppression,volunteerism,slavery
+ordinary,commonplace
+organization,cartel,confederation
+organizations,cartel,confederation
+oriental,Asian
+other,optional
+others,optionals
+outgrowth,excrescence
+outgrowths,excrescences
+outside,great wide open
+outsider,infidel
+outsiders,infidels
+outstanding,outrageous
+overnight,nocturnal duration
+overnights,nocturnal durations
+overworked,state of shock and exhaustion
+pager,diminutive electronic handcuff
+pagers,diminutive electronic handcuffs
+paid,remunerated
+pain,physical sufferance
+pair,couple
+pairs,couples
+pale,etiolate
+pamphlet,circular,tract,compendium
+pamphlets,circulars,tracts,compendiums
+paper,writing surface derived from pulverized cellulose
+paperback,vacation reading material
+paperbacks,vacation reading materials
+papers,writing surfaces derived from pulverized cellulose
+paperweight,document restraining device
+parade,march in procession
+parades,marches in procession
+paradigm,confines of mindset and lifestyle
+paradigms,confines of mindset and lifestyle
+parameter,measurable factor
+parameters,measurable factors
+parking,automobile storage
+part,subdivision
+parties,non-related work activities unless release waivers are signed
+partner,like-minded significant other
+partners,partners in crime
+partnership,gang
+partnerships,gangs
+parts,subdivisions
+party,non-related work activity unless release waivers are signed
+past,previous point in the space-time continuum
+pasts,pervious points in the space-time continuum
+path,circuitous course
+paths,circuitous courses
+pay,compensate,recompense,remunerate
+paycheck,salary remittance
+paychecks,salary remittances
+payment,compensation,recompense,remuneration
+payments,compensations,recompenses,remunerations
+payoff,final reckoning
+payoffs,final reckonings
+payroll,ever-shrinking pie of money divided among employees
+pc,personal computer
+pcs,personal computers
+peak,zenith
+peaks,zeniths
+peerless,nonpareil
+pen,writing implement
+pencil,antiquated impermanent writing instrument
+pencils,antiquated impermanent writing instruments
+people,ignorant masses,members of the public,end users
+performance,effectuation
+performances,effectuations
+perk,perquisite
+perpetuity,uninterrupted existence
+personal,private and not a topic for discussion at work
+pet,cherished companion
+peter,diminish
+pets,cherished companions
+petty,trivial,inconsequential
+phase,period in a series of changing periods
+phases,periods in a series of changing periods
+phone,telephone
+phones,telephones
+phrase,expression,utterance
+phrases,expressions,utterances
+picture,symbolic representation
+pilot,aeronaut
+pilots,aeronauts
+piss,urine
+pity,bowels of compassion
+plain,lack of ornamentation
+plant,plantation
+plants,plantations
+plaque,decorative plate
+plaques,decorative plates
+plead,advocate
+please,if you please
+pocket,garment containment unit
+pockets,garment containment units
+poetry,versemongering
+policies,standard operating procedures
+policy,standard operating procedure
+polite,politically correct,mannerly
+political,fraught with overtones of intrigue and conspiracy
+pompous,hoity-toity,fancy-pants
+poor,financially challenged
+possibilities,conceivabilities
+possibility,conceivability
+postpone,temporarily suspend in time
+postponed,temporarily suspended in time
+postpones,temporarily suspends in time
+postponing,temporarily suspending in time
+potency,horsepower
+power,surging force
+preference,orientation
+preferences,orientations
+preliminary,early stages and very hush-hush,prior to the main matter
+prepare,make preparations
+prepared,in a state of preparedness
+preparing,making preparations for
+prerequisite,sine qua non
+pres,el presidente
+president,potentate
+presidents,potentates
+pressure,hardship and stress
+pressures,hardships and stresses
+pretext,allegation,ostensible motive
+pretexts,allegations,ostensible motives
+price,current quotation
+prices,current quotations
+print,typograph
+printer,typographer
+printers,typographers
+printing,typographing
+prints,typographs
+priorities,precedencies
+priority,precedence
+proactive,clairvoyant
+problem,situation which presents difficulty
+problems,situations which present difficulty
+producer,haberdasher
+producers,haberdashers
+product,fruit of creative effort
+production,fruitification,unit manufacturing
+productive,extremely productive and popular
+products,fruits of creative efforts
+profession,activity pursued as a livelihood
+profit,advantageous return,unexpected gain
+profitability,advantageous return functionality
+profitable,advantageously gainful
+profits,advantageous returns,unexpected gains
+program,general principals
+programmer,facilitator of programs who does something with eunuchs
+programmers,facilitators of programs who do something with eunuchs
+programs,general principals
+project,undertaking
+projector,electronic visual display machine
+projectors,electronic visual display machines
+projects,undertakings
+promotion,career advancement
+promotions,career advancements
+proofread,pre scan for errors or omissions
+proportionately,pro rata
+proposal,preliminary concept
+proposals,preliminary concepts
+prostitute,dinner date
+prostitutes,dinner dates
+protector,defender
+protectors,defenders
+protocol,in flux chain of command
+provide,make available
+public,brain-dead zombie-like mass of web-surfing couch potatoes
+publication,dissemination,promulgation
+publications,disseminations,promulgations
+publisher,disseminator,promulgator
+publishers,disseminators,promulgators
+punishment,pain or confinement for wrongdoing,castigation,chastisement
+punishments,pains or confinements for wrongdoing,castigations,chastisements
+purchase,expenditure
+purchases,expenditures
+purpose,determination
+purposes,determinations
+q1,first quarter
+q2,second quarter
+q3,third quarter
+q4,fourth quarter
+qualifications,attractiveness
+qualities,high levels of standard
+quality,high level of standard
+quantities,quantitative amounts
+quantity,quantitative analysis
+question,inquiry
+questions,inquiries
+quota,token needed to satisfy requirement
+quotas,tokens needed to satisfy requirements
+rain,act of God
+re:,regarding
+read,peruse
+reading,perusing
+reads,peruses
+real,very authentic
+rear,hindmost part
+rears,hindmost parts
+reason,logical assertion
+reasonable,traditional,orthodox
+reasons,logical assertions
+reboot,rid the demons of stupidity and start all over again
+rebooted,ridded the demons of stupidity and started all over again
+rebooting,ridding the demons of stupidity and starting all over again
+reboots,rids the demons of stupidity and starts all over again
+receptacle,saddlebag
+receptacles,saddlebags
+recommendation,recommending gesture
+record,chronicle
+recorder,historiographer,chronicler,memorialist
+recorders,historiographers,chroniclers,memorialists
+records,chronicles
+recreation,non-sanctioned non-workplace activity
+recruit,impressionable foot soldier
+recruits,impressionable foot soldiers
+red,crimson,scarlet
+reds,crimsons,scarlets
+regarding,in re
+rejection,noninclusion
+rejections,noninclusions
+related,correlative
+relax,de-intensify
+relaxed,nonchalant
+relevant,pertinent and to the point
+remember,review in retrospect,recall
+remembered,reviewed in retrospect,recalled
+remembering,reviewing in retrospect,recalling
+remembers,reviews in retrospect,recalls
+reminder,means to aid memory
+reminders,means to aid memory
+remote,faraway and removed
+remove,excise
+removes,excises
+rent,temporary occupation fee
+rental,temporary occupation fee type
+rented,advanced remuneration in exchange for temporary occupation of
+renting,advancing remuneration in exchange for temporary occupation
+repairman,revitalization technician
+repairmen,revitalization technicians
+replace,substitute
+replaces,substitutes
+report,presentation including three-ring binders and overhead projectors
+reports,presentations including three-ring binders and overhead projectors
+representation,assumption of a character
+representations,assumptions of characters
+request,solicit,endeavor to attain
+requests,solicitations
+requirement,matter of necessity
+requirements,matters of necessity
+research,painstaking exploration and discovery
+researched,discovered through painstaking exploration
+researcher,high dome,egghead
+reservation,space saved by leaving a name and telephone number
+reservations,spaces saved by leaving a name and telephone number
+resource,asset having economic value
+resources,assets having economic value
+response,allocution
+responses,allocutions
+responsibilities,burdens of accountability
+responsibility,burden of accountability
+restaurant,culinary acquisition location,cafe
+restaurants,culinary acquisition locations,cafes
+result,fruitful outcome
+results,fruitful outcomes
+resume,chronological accounting and embellishment of employment
+retire,liberate
+retired,liberated
+retirement,liberation
+retirements,liberations
+retires,liberates
+reuse,repurpose
+reused,repurposed
+reuses,repurposes
+reusing,repurposing
+revenge,vindictivolence
+revenue,financial yield
+revenues,financial yields
+reverse,recant
+reversed,recanted
+reversing,recanting
+reward,incentive
+rewarded,tipped
+rewarding,warmly gratifying
+rewards,incentives
+right,conforming to accepted standards
+rights,privileges
+ring,tonal sound
+ringing,tonal sounding
+rings,tonal sounds
+rom,read-only memory
+roomy,commodious,spacious
+routine,habitual occurrence
+routinely,habitually
+routines,habitual occurrences
+rule,regulation
+rules,regulations
+rumor,water-cooler currency
+rumors,water-cooler currencies
+runner,fast-paced foot soldier
+runners,fast-paced foot soldiers
+s,states
+safeties,protections
+safety,protection and safekeeping
+said,averred
+salaries,Roman salt monies,fixed compensations for services
+salary,Roman salt money,fixed compensation for services
+sale,retail exchange
+sales,retail exchanges
+salesclerk,retail exchange professional
+salesclerks,retail exchange professionals
+salesman,salesperson
+salesmen,salespeople
+salespeople,retail exchange professionals
+salesperson,retail exchange professional
+sang,made melodious vocal tones
+satisfaction,sense of accomplishment
+saturday,the sixth day of the week
+saturdays,the sixth days of the week
+say,aver
+saying,averring
+says,avers
+scenario,forecasted qualitative view of the future
+scenarios,forecasted qualitative views of the future
+schedule,activity scheme
+scheduled,preplanned by activity and resource
+schedules,activity schemes
+scheduling,activities scheming
+scheming,Machiavellian
+school,educational institution
+schools,educational institutions
+scientist,high dome,egghead
+scientists,high domes,eggheads
+scissors,dual bladed cutting utensil
+screensaver,cotton candy for the eyes
+seasonal,climate conditional time span
+second,secondary
+secret,confidential,privileged communication
+secretaries,administrative assistants,support staff
+secretary,administrative assistant,support staff
+secrets,privileged communications
+security,defense
+seminar,intensive study seminar
+seminars,intensive study seminars
+send,transmit
+sending,transmitting
+sends,transmits
+sent,transmitted
+september,ninth month of the Gregorian calendar
+sequence,order of succession
+sequences,orders of succession
+server,provider
+servers,providers
+severance,end of relationship
+shade,canopy
+shades,canopies
+she,she is a woman who
+shield,aegis
+shit,manure,feces,excrement
+shoe,footwear that can be eaten if humbleness is required
+shoes,footwear that can be eaten if humbleness is required
+short,less than tall
+shorts,short pants
+show,display
+shows,displays
+shredder,written discrepancy terminator,material destroyer
+shredders,written discrepancy terminators,material destroyers
+side,flank
+sides,flanks
+sightseeing,taking in the sights
+significance,import
+siliwood,convergence of movies computers and interactive TV
+similarities,homogeneities
+similarity,homogeneity
+sincerely,most ardently,fervently
+sing,make melodious vocal tones
+size,tonnage
+sizes,tonnages
+skg,Spielberg Katzenberg Geffen
+skill,attractiveness and height,adeptness at complementing the boss,capability,attribute
+skills,attractiveness and heights,adeptness at complementing the boss,tool set
+skin,cutaneous
+skinned,cutaneously removed
+skins,cutaneouses
+slang,neologisms
+slap,do percussive maintenance on
+slapped,did percussive maintenance on
+slapping,doing percussive maintenance on
+sleep,rest unconsciously
+sliderule,pre-electronic calculation device
+slogan,short sales pitch
+slogans,short sales pitches
+slowness,leisurely gait
+slut,promiscuous wench
+sluts,promiscuous wenches
+small,minuscule,diminutive
+smaller,more diminutive
+smallness,picayunishness,paucity,insignificance
+snake,legless reptile
+snakes,legless reptiles
+sober,unintoxicated
+soft,milquetoast,nonabrasive
+software,program code
+solution,determination
+solutions,determinations
+some,an unspecified number
+sometimes,occasionally but not often
+son,handsome brilliant child,male offspring
+soon,in the next month or so,real soon now
+sorry,commiserative
+soul,emotional or moral nature
+souls,emotional or moral natures
+sound,vibratory disturbance
+sounds,vibratory disturbances
+space,roomage,firmament
+spacious,commodious
+spare,supplemental
+speaker,elocutionist
+speakerphone,hands free telephony device
+speakers,elocutionists
+spectator,excursionist
+speech,discourse
+speeches,discourses
+spit,expectorate
+spoken,verbally communicated
+spouse,significant other,partner
+spouses,significant others,partners
+spring,leap forward
+stability,immovability
+staff,enterprise personnel
+stall,procrastinate,deliberately delay
+stalled,procrastinated,deliberately delayed
+stalling,procrastinating,deliberately delaying
+stalls,procrastinates,deliberately delays
+stapler,document bonding device,metal projectile dispenser
+staplers,document bonding devices,metal projectile dispensers
+star,luminous celestial body of hot gas
+starch,farinaceous
+starches,farinaceouses
+starlight,electromagnetic radiation from luminous celestial bodies of hot gas
+stars,luminous celestial bodies of hot gas
+start,originate
+started,originated
+starting,originating
+starts,originates
+startup,starving enterprise
+startups,starving enterprises
+station,assigned position
+stations,assigned positions
+statistics,graphs and charts
+stats,statistics
+status,blow by blow account of present state
+steal,borrow without a plan for returning
+steals,borrows without a plan for returning
+stink,putrescent
+stock,treasured holdings
+stop,cease,terminate
+stopped,ceased,terminated
+stopping,ceasing,terminating
+stops,ceases,terminates
+storeroom,area for storing often stolen supplies
+strength,pithiness,rugged physique
+stress,postal work conditions
+stresses,postal work conditions
+strong,powerful
+student,educatee,scholar
+students,educatees,scholars
+stuff,material,substances
+stuffs,materials,substances
+stupid,unintelligentsia,conceptually flawed
+subsidies,subventions
+subsidy,subvention
+suburb,residential region
+suburbs,residential regions
+success,extraordinary stroke of luck and fortunate outcome
+successes,extraordinary strokes of luck and fortune outcomes
+suck,draw liquid from
+sucks,draws liquid
+suggestion,proposed plan of attack
+suggestions,proposed plans of attack
+suit,business uniform
+summer,dog days
+summers,multiple dog days
+sun,great mother of solar energy
+sunday,the final day of the week
+sundays,the final days of the week
+sung,made melodious vocal tones
+superhighway,supreme traveling thoroughfare
+superhighways,supreme traveling thoroughfares
+superiority,perponderation
+superiors,higher-salaried in-duh-viduals
+supervisor,jailer
+supervisors,jailers
+supplies,employee benefits
+support,supportance
+sure,positive beyond a reasonable doubt
+survey,exhaustive research compendium
+surveys,exhaustive research compendiums
+sweet,pleasing to the senses
+swinger,promiscuous person
+swingers,promiscuous people
+syndrome,acknowledged phenomenon
+syndromes,acknowledged phenomenon
+syntax,accidence
+system,mode of operation
+systems,mode of operations
+talent,exceptional ability
+talents,exceptional abilities
+talkative,loquacious,given to conversation
+target,preferred area of focus
+targeted,primarily focused on
+targeting,primarily focusing on
+targets,preferred areas of focus
+task,application,obligatory duty
+tasks,applications,obligatory duties
+tax,governmental levy
+taxes,governmental levies
+teach,tutor,persuade
+teacher,instructor,pundit
+teachers,instructors,pundits
+teaches,tutors,persuades
+team,paramilitary organization
+teams,paramilitary organizations
+techno-geek,technology superhero
+techno-geeks,technology superheroes
+technology,super technology,powerful-yet-easy-to-use technology,user-friendly technology
+telecommute,daily trek via modem to place of employment
+telecommutes,daily treks via modem to place of employment
+telecommuting,daily trekking via modem to place of employment
+telephone,telegraphic dispatch
+telephones,telegraphic dispatches
+tell,articulate to
+telling,articulating to
+tells,articulates to
+temper,attitude discrepant behavior
+tempers,attitude discrepant behaviors
+temporarily,pro tempore,for the time being
+temporary,impermanent,provisional
+tendencies,gravitations
+tendency,gravitation
+term,round in a ladder
+terms,obligations and requirements
+terrible,not optimum
+test,verification
+tests,verifications
+text,written script in lieu of verbal communication
+texts,written scripts in lieu of verbal communication
+thankful,incredibly grateful
+thankfully,with gratitude
+theme,topic of discourse
+themes,topics of discourse
+themselves,those ones identical with them
+theory,conclusion involving much painstaking research
+thereafter,thenceforth
+therefore,ergo,as a result thereof
+third,tertiary
+though,in spite of the fact that
+thursday,the fourth day of the week
+thursdays,the fourth days of the week
+time,non-spatial continuum
+times,non-spatial continuums
+tiny,microscopic,minuscule,diminutive
+today,the day after yesterday,the day before tomorrow
+together,symbiotic
+toilet,receptacle of vile filth and waste product
+toilets,receptacles of vile filth and waste product
+told,articulated to
+tomorrow,the day after today
+tonight,this evening
+too,also,in addition
+top,surface
+topic,theme
+topics,themes
+tops,surfaces
+tour,exploration
+tours,explorations
+trade,activity pursued as a livelihood
+trades,activities pursued as a livelihood
+traffic,volume of vehicles and persons in transit
+trainee,victim of rehashing of pre-existing knowledge
+trainees,victims of rehashing of pre-existing knowledge
+training,rehashing of pre-existing knowledge
+transfer,relocate
+transportation,conveyance
+trash,waste,refuse
+travel,journeyings,globe-trotting,vagabondage
+traveler,commuter,trekker
+travelers,commuters,trekkers
+travels,globe-trots,journeys
+treasurer,monetary issues overlord
+tries,endeavors
+trip,excursion
+trips,excursions
+trophies,weighty tokens of appreciation similar to but not necessarily limited to a gold star
+trophy,weighty token of appreciation similar to but not necessarily limited to a gold star
+truth,unvarnished tale
+truths,unvarnished tales
+try,endeavor
+tuesday,the second day of the week
+tuesdays,the second days of the week
+tumor,neoplasm
+turnaround,reverse position
+typewriter,antiquated tool for addressing envelopes and labels
+u,united
+ugly,has personality
+uncertainty,to-be-determined status
+unclear,intangible
+under,below the surface
+understand,comprehend
+undid,reverse engineered
+undo,reverse engineer
+undoing,reverse engineering
+unemployed,consulting,self-employed,pursuing other opportunities
+unemployment,self-employment
+unfortunately,despite our greatest efforts
+unique,one-of-a-kind,sui generis
+unproductive,not overworked
+unprofitable,unpleasant and non-advantageously gainful
+unrealistic,nonrepresentational of physical existence
+until,until such time as
+unwilling,indisposed to accept or agree
+upgrade,improve status
+urgent,absolutely the highest of all high priorities
+usage,mode of employ
+usages,modes of employ
+use,utilize,employ
+useful,serviceable
+uses,utilizes,employs
+vacation,detoxification
+vacations,detoxifications
+valuable,priceless
+value,equivalent worth,utility
+values,equivalent worth,utilities
+vast,immeasurable
+vehicle,conveyance,transportation device
+vehicles,conveyances,transportation devices
+vendor,salesperson with a corporate attitude
+vendors,salespeople with corporate attitudes
+very,extremely
+vice-president,errand boy
+vision,perspicacity
+visions,perspicacities
+voice,intonation,activation of the larynx
+voicemail,artificial intelligence via fiber optic telephone lines
+voices,intonations,activations of the larynx
+wage,compensation for services
+wages,compensations for services
+walk,ambulate,stroll
+walked,ambulated,strolled
+walking,ambulating,strolling
+walks,ambulates,strolls
+warning,admonitory notification
+warning,admonitory notifications
+wash,cleanse
+washed,cleansed
+washes,cleanses
+washing,cleansing
+wasn't,was not
+wasted,uselessly consumed
+water,hydrogen dioxide
+way,modus operandi,method
+waybill,shipping instructions and details document
+waybills,shipping instructions and details documents
+ways,more than one modus operandi,methods
+we,I and others
+weak,without strength
+weakness,inability to stand up and face the piper,namby-pamby
+weaknesses,inabilities to stand up and face the piper,shortcomings,deficiencies
+wealth,material abundance
+wealthy,financially unchallenged
+web,intricately contrived complex network
+webs,intricately contrived complex network
+wednesday,the third day of the week
+wednesdays,the third days of the week
+week,seven day period
+weekend,sixth and seventh day of the calendar week,two casual days in a row
+weekends,sixth and seventh days of the calendar week
+weeks,seven day periods
+well,skillfully
+we're,we are
+weren't,were not
+whatever,- like you know - whatever
+when,at the moment when
+whenever,at some non-specific time
+where,at what locale
+while,during which time
+whip,flagellum
+whips,flagellums
+white,snowy white
+whole,complete assemblage
+whore,courtesan
+whores,courtesans
+wife,significant other,partner,spouse
+willing,disposed to accept or agree
+wind,movement of air
+window,glass or heavy plastic portal to the world beyond,aperture
+windows,glass or heavy plastic portals to the world beyond,apertures
+winds,movements of air
+wine,fermented juice of grapes
+winery,grape fermenting establishment
+wines,fermented juices of grapes
+winter,wintertide
+winters,wintertides
+wireless,free range
+wit,ability to tell jokes in meetings
+wives,significant others,partners
+woman,person of the female gender
+word,vocal expression
+words,vocal expressions
+workplace,productivity environment
+workplaces,productivity environments
+world,marcroenvironment
+worlds,macroenvironments
+worries,concerns
+worry,concern
+write,correspond,put pen to paper,script,sling ink
+writer,scribe,word smith
+writers,scribes,word smiths
+writes,corresponds,puts pen to paper,scripts,slings ink
+writing,productivity,ink-slinging
+wrong,erroneous
+wrote,corresponded,scripted,slung ink
+xerox,duplicate
+year,365 day-5 hour-49 minute period
+years,365 day-5 hour-49 minute periods
+yes,affirmative
+yesterday,the day preceding today
+youth,the glad season of life,heyday of youth
+youths,delinquents
+zany,outlandish,clownish
+zap,flamboyantly eliminate
+zapped,flamboyantly eliminated
+zeal,enthusiastic devotion
+zenith,point of culmination
+zero,naught
+zest,piquancy
+zipper,interlocking teeth fastening device
+zoo,zoological garden
+xojet,the place where one flys beautifly

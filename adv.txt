@@ -1,0 +1,237 @@
+alleviate,surely alleviate,quickly alleviate
+alleviated,effortlessly alleviates,completely alleviates
+alleviates,suddenly alleviates,totally alleviates 
+alleviating,successfully alleviates,unquestioningly alleviates
+am,am fervently,am instinctively,am powerfully
+answer,importantly answer,marvelously answer
+answered,accidentally answered,slowly answered 
+answering,reliably answering,tentatively answering
+answers,elegantly answers,suddenly answers
+appear,appear revoltingly,appear unsuitably
+appeared,appeared radiantly,appeared unrealistically
+appearing,appearing rapidly,appearing violently
+appears,appears awkwardly,appears ominously
+appreciate,appreciate sincerely,appreciate marvelously
+appreciated,appreciated whole-heartedly,appreciated suddenly
+appreciates,appreciates very much,appreciates indiscriminately
+appreciating,appreciating enormously,appreciating warmly
+approached,approached delicately
+approaching,approaching gingerly
+are,are importantly,are undoubtedly
+became,became elegantly,became primarily
+become,become brilliantly,became stupidly
+becomes,becomes heavily,becomes warmly
+becoming,becoming rapidly,becoming decently
+call,importantly call,coldly call
+called,accidentally called,sharply called
+calling,carefully calling,powerfully calling
+calls,calls marvelously,calls
+conclude,conclude abruptly
+concluded,concluded rudely
+concludes,concludes violently
+concluding,concluding importantly
+consider,consider thoughtfully,consider sweetly
+considered,considered rapidly,considered slowly
+considering,considering increasingly,considering positively
+considers,considers genuinely,considers quietly
+define,define concisely
+defined,defined sharply
+defines,defines accurately
+defining,defining perfectly
+demand,demand awkwardly,demand professionally
+demanded,demanded respectfully,demanded harshly
+demanding,demanding tentatively,demanding reasonably
+demands,demands damagingly,demands heavy-handedly
+develop,evolve organically
+developed,evolved completely
+developing,evolving sweetly
+develops,evolves powerfully
+disregard,completely disregard,furiously disregard
+disregarded,instantly disregarded,awkwardly disregarded
+disregarding,hastily disregarding,expertly disregarding
+disregards,violently disregards,respectfully disregards
+drank,drank awkwardly,drank ominously
+drink,drink immaculately,drink violently
+drinking,drinking frequently,drinking caustically
+drinks,drinks marvelously,drinks quietly
+drives,drives slowly,drives cautiously
+driving,driving accidentally,driving professionally
+drove,drove effortlessly,drove reliably
+eliminate,drastically eliminate,quietly eliminate
+eliminated,effortlessly eliminated,steadily eliminated
+eliminates,unfeelingly eliminates,suddenly eliminates
+eliminating,honestly eliminating,nobly eliminating
+endeavor,endeavor sincerely
+endeavored,endeavored seriously
+endeavoring,endeavoring unquestionably
+endeavors,endeavors whole-heartedly
+ended,ended mysteriously,ended sweetly
+ending,ending undoubtedly,ending unscientifically
+enjoy,enjoy marginally,enjoy periodically
+enjoyed,enjoyed increasingly,enjoyed steadily
+enjoying,enjoying unrestrainedly,enjoying hedonistically
+enjoys,enjoys tremendously,enjoys unquenchably
+expect,expect honestly,expect meaningfully
+expected,expected unrelentingly,expected unrepentantly
+expecting,expecting undoubtedly,expecting repeatedly
+expects,expects unrealistically,expects unquestionably
+expressed,expressed passionately
+expresses,expresses flamboyantly
+expressing,expressing movingly
+find,find immaculately,find furiously
+finding,finding correctly,finding quietly
+finds,finds well,finds expertly
+found,found rapidly,found delicately
+gave,generously donated,ominously distributed
+generate,suddenly generate,unrealistically generate
+generated,undoubtedly generated,incessantly generated
+generates,abundantly generates,impressively generates
+generating,powerfully generating,imaginatively generating
+give,exclusively donate,magnanimously distribute
+gives,correctly donates,generously distributes
+giving,meaningfully donating,mercilessly distributing
+go,go instinctively,go undoubtedly
+gone,gone scientifically,gone slowly
+had,had respectfully,had completely
+handled,manipulated respectably,manipulated poorly
+handling,manipulating marvelously,manipulating expertly
+happen,transpire beautifully,occur stylistically
+happened,transpired brilliantly,occurred frequently
+happening,transpiring robustly,occurring fervently
+happens,transpires automatically,occurs impressively
+has,has masterfully,has perfectly
+hate,absolutely hate,heartily hate
+hated,transparently hated,totally hated
+hates,powerfully hates,unquestionably hates
+hating,unquenchably hating,scientifically hating
+have,have expertly,have furiously
+having,having absolutely,having honestly
+helped, assisted completely
+helping,assisting surely
+helps,assists expertly
+immerse,thoroughly immerse, rudely immerse
+immersed,warmly immersed,marvelously immersed
+immerses,instantly immerses,slowly immerses
+immersing,frequently immersing,organically immersing
+is,is automatically,is dashingly,is genuinely,is impressively,is organically,is perfectly,is stylistically
+listen,listen exclusively,listen marginally
+listened,listened radiantly,listened stoically
+listening,listening automatically,listening loudly
+listens,listens reliably,listens dutifully
+looked,gazed dutifully
+looking,gazing steadily
+love,love magnanimously,love satisfactorily
+loved,loved reliably,loved unrestrainedly
+loves,loves lushly,loves mysteriously
+loving,loving respectably,loving powerfully
+made,made nicely,made dutifully
+make,make wonderfully,make perfectly
+makes,makes elegantly,makes quickly
+making,making importantly,making tirelessly
+move,relocate magnificently,relocate unquestionably
+moved,relocated steadily,relocated tentatively
+moves,relocates slowly,relocates unrealistically
+moving,relocating stylistically,relocating suddenly
+navigate,carefully navigate,dangerously navigate
+navigated,expertly navigated,bizarrely navigated
+navigates,delicately navigates,furiously navigates
+navigating,powerfully navigating,sweetly navigating
+planned,schemed blazingly,schemed marvelously
+planning,scheming incessantly,scheming winningly
+progressed,accurately progressed,dutifully progressed
+progresses,dramatically progresses,instantly progresses
+progressing,decently progressing,successfully progressing
+provoke,provoke annoyingly
+provoked,provoked strongly
+provokes,provokes surely
+provoking,provoking solidly
+pursue,slowly pursue,cautiously pursue
+pursued,openly pursued,incessantly pursued
+pursues,ambitiously pursues,delicately pursues
+pursuing,expertly pursuing,meaningfully pursuing
+raised,raised rapidly,raised impressively
+raising,raising unscientifically,raising sternly
+ran,ran beautifully,ran organically
+refuse,refuse rapidly,refuse nicely
+refused,refused correctly,refused powerfully
+refuses,refuses completely,refuses unrepentantly
+refusing,refusing instinctively,refusing angrily
+regret,sincerely regret,rapidly regret
+regrets,deeply regrets,wisely regrets
+regretted,overwhelmingly regretted,violently regretted
+regretting,genuinely regretting,slowly regretting
+rejected,excluded mysteriously,excluded momentously
+rejecting,excluding reluctantly,excluding enthusiastically
+require,emphatically require,enthusiastically require
+required,delicately required,clearly required
+requires,unwaveringly requires,furiously requires
+requiring,necessarily requiring,awesomely requiring
+resulted,resulted dramatically,resulted suddenly
+resulting,resulting powerfully,resulting eventually
+return,return periodically,return slowly
+returned,returned automatically,returned unrelentingly
+returning,returning violently,returning steadily
+returns,returns mysteriously,returns ultimately
+rise,rise violently,rise dutifully
+rises,rises sadly,rises sweetly
+rising,rising wisely,rising moodily
+rose,rose beautifully,rose immediately
+run,run blazingly,run magnificently
+running,running unquenchably,running smoothly
+runs,runs instantly,runs suitably
+sat,sat correctly,sat radiantly
+searched,searched diligently
+searching,searching tirelessly
+sit,sit comically,sit wisely
+sitting,sitting instinctively,sitting nicely
+smoke,smoke lushly,smoke revoltingly
+smoked,smoked beautifully,smoked quietly
+smokes,smokes independently,smokes constantly
+smoking,smoking ominously,smoking incessantly
+speak,communicate awkwardly,communicate respectably
+speaking,communicating unproductively,communicating powerfully
+speaks,communicates magnanimously,communicates loudly
+spoke,communicated beautifully,communicated weakly
+stand,stand beautifully,stand stoically
+standing,standing awkwardly,standing importantly
+stands,stands stiffly,stands impressively
+stood,stood strongly,stood quietly
+take,appropriate steadily,appropriate unsatisfactorily
+takes,appropriates effortlessly,appropriates tentatively
+taking,appropriating instinctively,appropriating cruelly
+talked,conversed meaningfully,conversed impressively
+talking,conversing constantly,conversing unrelentingly
+thank,sincerely thank,hugely thank
+thanked,violently thanked,instantly thanked
+thanking,incessantly thanking,impressively thanking
+thanks,sweetly thanks,gingerly thanks
+think,intellectualize independently,intellectualize long and hard
+thinking,intellectualizing seriously,intellectualizing emotionally
+thinks,intellectualizes rapidly,intellectualizes unquestionably
+thought,intellectualized carefully,intellectualized deeply
+took,appropriated abruptly,appropriated magnificently
+wake,wake prettily,wake menacingly
+wakes,wakes crudely,wakes routinely
+waking,waking unsuitably,waking sharply
+want,very much want,automatically want
+wanted,tentatively wanted,unmistakably wanted
+wanting,hugely wanting,instinctively wanting
+wants,animatedly wants,steadily wants
+was,was automatically,was wonderfully
+watch,watch carefully,watch unproductively
+watched,watched undoubtedly,watched wearily
+watches,watches constantly,watches impressively
+watching,watching curiously,watching sternly
+went,went accidentally,went unquestionably
+were,were beautifully,were nastily
+will,absolutely will,abruptly will
+woke,woke wearily,woke rudely
+worked,worked tirelessly,worked slowly
+working,working fiendishly,working endlessly
+write,write abruptly,write violently
+writing,writing unscientifically,writing repeatedly
+wrote,wrote awkwardly,wrote impressively
+yell,yell automatically,yell powerfully
+yelled,yelled comically,yelled potently
+yelling,yelling accidentally,yelling incessantly
+yells,yells abruptly,yells impressively
