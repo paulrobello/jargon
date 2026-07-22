@@ -83,7 +83,7 @@ Substitution vocabulary lives entirely in plain-text files under `src/data/` rat
 - `tests/jargonate.test.ts` — Vitest unit tests for the transformation logic
 - `Makefile` — standard targets: `dev`, `build`, `test`, `lint`, `fmt`, `typecheck`, `checkall`
 - `.github/workflows/ci.yml` — lint/typecheck/test/build on every push and PR
-- `.github/workflows/deploy.yml` — builds and deploys `dist/` to GitHub Pages on pushes to `main`/`master`
+- `.github/workflows/deploy.yml` — builds and deploys `dist/` to GitHub Pages on pushes to `main`
 
 ## Development
 
@@ -98,11 +98,9 @@ make checkall     # fmt:check + lint + typecheck + test + build
 
 ## Deployment (GitHub Pages)
 
-The `deploy` workflow builds the Vite app and publishes `dist/` via GitHub's official Pages Actions (`actions/upload-pages-artifact` + `actions/deploy-pages`). To enable it on a new repository:
+The `deploy` workflow builds the Vite app and publishes `dist/` via GitHub's official Pages Actions (`actions/upload-pages-artifact` + `actions/deploy-pages`) on every push to `main`. Pages is configured with **Source: GitHub Actions** and a custom domain of **jargon.pardev.net** (see `public/CNAME`, which Vite copies into `dist/` as-is).
 
-1. Push this repository to GitHub.
-2. In the repository settings, under **Pages**, set **Source** to **GitHub Actions**.
-3. Push to `main` (or `master`) — the workflow builds and deploys automatically.
+Live at <https://jargon.pardev.net>.
 
 The Vite build uses a relative `base: './'` so the site works whether it's served from a custom domain, a user page, or a project page under a subpath.
 
