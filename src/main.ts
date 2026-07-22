@@ -13,7 +13,7 @@ const form = required<HTMLFormElement>('#jargon-form');
 const input = required<HTMLTextAreaElement>('#in');
 const output = required<HTMLTextAreaElement>('#out');
 const densitySlider = required<HTMLInputElement>('#level');
-const densityReadout = required<HTMLElement>('#level-readout');
+const tickRow = required<HTMLElement>('#level-ticks');
 const stampButton = required<HTMLButtonElement>('#submit');
 
 const stampMark = document.querySelector<HTMLElement>('#stamp-mark');
@@ -29,13 +29,25 @@ const DENSITY_LABELS: ReadonlyArray<[number, string]> = [
   [100, 'Maximum Synergy'],
 ];
 
-function densityLabel(value: number): string {
-  const match = DENSITY_LABELS.find(([threshold]) => value <= threshold);
-  return match ? match[1] : DENSITY_LABELS[DENSITY_LABELS.length - 1][1];
+function renderTicks(): void {
+  tickRow.replaceChildren(
+    ...DENSITY_LABELS.map(([, label]) => {
+      const span = document.createElement('span');
+      span.className = 'level-tick';
+      span.textContent = label;
+      return span;
+    }),
+  );
 }
 
-function updateDensityReadout(): void {
-  densityReadout.textContent = densityLabel(Number(densitySlider.value));
+function updateActiveTick(): void {
+  const value = Number(densitySlider.value);
+  const activeIndex = DENSITY_LABELS.findIndex(([threshold]) => value <= threshold);
+  const index = activeIndex === -1 ? DENSITY_LABELS.length - 1 : activeIndex;
+  const ticks = Array.from(tickRow.querySelectorAll<HTMLElement>('.level-tick'));
+  ticks.forEach((tick, i) => {
+    tick.classList.toggle('level-tick--active', i === index);
+  });
 }
 
 function replayAnimation(el: HTMLElement | null, className: string): void {
@@ -47,8 +59,8 @@ function replayAnimation(el: HTMLElement | null, className: string): void {
 }
 
 function runJargonate(): void {
-  // The slider reads left-to-right as "more jargon", but the ported
-  // pickRand() roll fires more often at *lower* level values, so invert here.
+  // The slider reads left-to-right as "more jargon", but the substitution
+  // roll fires more often at *lower* level values, so invert here.
   const density = Number(densitySlider.value);
   const level = 100 - density;
 
@@ -64,7 +76,7 @@ form.addEventListener('submit', (event) => {
   runJargonate();
 });
 
-densitySlider.addEventListener('input', updateDensityReadout);
+densitySlider.addEventListener('input', updateActiveTick);
 
 for (const chip of document.querySelectorAll<HTMLButtonElement>('.chip')) {
   chip.addEventListener('click', () => {
@@ -103,6 +115,7 @@ if (memoDate) {
   memoDate.dateTime = today.toISOString().slice(0, 10);
 }
 
-updateDensityReadout();
+renderTicks();
+updateActiveTick();
 input.value = 'We should finish this soon.';
 runJargonate();
