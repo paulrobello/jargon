@@ -205,7 +205,7 @@ analysts,interrelations study experts
 analyze,scrutinize
 analyzed,scrutinized
 analyzes,scrutinizes
-and,in addition to
+and,and furthermore,and moreover
 anew,de novo
 angry,hostile and confrontational,unprofessional
 animal,creature,Kingdom Animalia
