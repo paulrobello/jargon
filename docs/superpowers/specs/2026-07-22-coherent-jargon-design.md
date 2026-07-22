@@ -62,6 +62,20 @@ original input:
   slang welcome — as long as each entry is grammatical in its slot.
 - `prep.txt` is dead code (never loaded); left untouched, noted here.
 
+### Density slider labels (`index.html`, `src/style.css`, `src/main.ts`)
+
+The five density labels (Plain English, Light, Moderate, Heavy, Maximum
+Synergy) move onto the slider line itself:
+
+- The `level-ticks` row under the track renders all five labels, positioned
+  across the track's width at their threshold ranges.
+- The label matching the current slider value is highlighted (ink color +
+  weight); the rest stay faded. Highlight updates live as the slider moves.
+- The separate top-right `level-readout` is removed; the highlighted tick
+  label takes over its role. The `aria-live` status flow is unchanged.
+- Labels stay legible on narrow screens (smaller type or staggered rows —
+  implementation's choice, no horizontal page scroll).
+
 ### Testing (`tests/jargonate.test.ts`)
 
 Deterministic tests using forced substitution / seeded picks:
@@ -77,5 +91,5 @@ Deterministic tests using forced substitution / seeded picks:
 
 ## Out of scope
 
-- UI changes, PHP-fidelity preservation of the replacement loop, prep.txt
-  removal, sentence-level NLP/POS analysis.
+- Other UI changes beyond the slider labels, PHP-fidelity preservation of the
+  replacement loop, prep.txt removal, sentence-level NLP/POS analysis.
