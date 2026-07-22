@@ -58,14 +58,30 @@ function boundaryWrap(key: string): string {
   return lead + escapeRegExp(key) + tail;
 }
 
+// Cache the compiled matcher per data.adv identity — building it is a ~2,300-alternative
+// regex compile, so re-running it on every jargonate() call is wasted work. Sharing one
+// RegExp instance across calls is safe despite the /g flag: String.replace always scans
+// from index 0 regardless of the RegExp's lastIndex. data is loaded once and treated as
+// immutable in this app, so keying on the Map's identity (not a deep hash) is sufficient;
+// a mutated same-identity Map would go stale, but nothing in the app does that.
+const matcherCache = new WeakMap<Map<string, string[]>, RegExp>();
+
 /**
  * One alternation over the article rule plus every table key, longest key
  * first so e.g. "answers" wins over "answer" at the same position.
+ *
+ * The article alternative is tried before any table key, so it always wins a
+ * tie at the same position — a table row keyed "a", "an", or "the" would be
+ * silently unreachable (dead) under this matcher.
  */
-function buildMatcher(data: JargonData): RegExp {
+export function buildMatcher(data: JargonData): RegExp {
+  const cached = matcherCache.get(data.adv);
+  if (cached) return cached;
   const keys = [...data.adv.keys()].sort((a, b) => b.length - a.length).map(boundaryWrap);
   const keyAlternation = keys.length > 0 ? `|(${keys.join('|')})` : '';
-  return new RegExp(`(?<![\\w-])(a|an|the)(?![\\w-])${keyAlternation}`, 'gi');
+  const matcher = new RegExp(`(?<![\\w-])(a|an|the)(?![\\w-])${keyAlternation}`, 'gi');
+  matcherCache.set(data.adv, matcher);
+  return matcher;
 }
 
 /** Uppercase the replacement's first letter when the source word had one. */
@@ -74,6 +90,12 @@ function matchCase(source: string, replacement: string): string {
     return replacement.charAt(0).toUpperCase() + replacement.slice(1);
   }
   return replacement;
+}
+
+/** True at the very start of the string, or right after sentence-ending punctuation / a line break. */
+const SENTENCE_START = /(^|[.!?]["')\]]?[ \t\n]+|\n[ \t]*)$/;
+function isSentenceStart(precedingText: string, offset: number): boolean {
+  return offset === 0 || SENTENCE_START.test(precedingText);
 }
 
 /**
@@ -85,7 +107,11 @@ const CONSONANT_SOUND = /^(uniq|unit|univ|use|user|one|once|eu|utop|ubiq)/i;
 /** Words after which inserting an adjective would read wrong (e.g. "the same way"). */
 const ARTICLE_INSERTION_STOPWORD = /^\s+(?:same|other|only|own|very|next|last|first|latter|former|aforementioned)\b/i;
 
-/** A capitalized word right before a numeric key marks it as a product/version number, not a count. */
+/**
+ * A capitalized word right before a numeric key marks it as a product/version number, not a count.
+ * Intentionally broad: any capitalized token (including one with internal punctuation, e.g. "CI&T")
+ * suppresses the following bare-number substitution, not just recognized product-name patterns.
+ */
 const CAPITALIZED_LEAD_IN = /(?:^|[\s(])[A-Z][\w&.-]*[ \t]+$/;
 
 function articleFor(word: string): 'a' | 'an' {
@@ -111,13 +137,6 @@ function fixArticles(text: string): string {
     (_match, article: string, gap: string, next: string) =>
       `${matchCase(article, articleFor(next))}${gap}${SENTINEL}${next}`,
   );
-}
-
-function normalizeWhitespace(text: string): string {
-  return text
-    .replace(/[ \t]{2,}/g, ' ')
-    .replace(/[ \t]+([.,;:!?])/g, '$1')
-    .replace(/^[ \t]+|[ \t]+$/gm, '');
 }
 
 /** A letter glued directly to '%' (e.g. from a spelled-out number) reads as "fifty percent". */
@@ -163,12 +182,19 @@ export function jargonate(
     const replacements = data.adv.get(match.toLowerCase());
     if (!replacements || !rolls(level, rng)) return match;
     if (/^\d+$/.test(match) && CAPITALIZED_LEAD_IN.test(string.slice(0, offset))) return match;
+    // Cooldown walks left-to-right, so when two keyed words are adjacent, the
+    // first one to match deterministically wins and the second is suppressed.
     if (lastTableEnd !== null && /^\s+$/.test(string.slice(lastTableEnd, offset))) return match;
     lastTableEnd = offset + match.length;
-    return `${SENTINEL}${matchCase(match, randomItem(replacements, rng))}`;
+    const replacement = randomItem(replacements, rng);
+    // Only force replacement casing at a sentence start; mid-sentence a
+    // capitalized source (proper noun, acronym) shouldn't force-capitalize
+    // the replacement — the replacement is used as authored instead.
+    const cased = isSentenceStart(string.slice(0, offset), offset) ? matchCase(match, replacement) : replacement;
+    return `${SENTINEL}${cased}`;
   });
 
-  text = normalizeWhitespace(smoothPercent(fixArticles(text).split(SENTINEL).join('')));
+  text = smoothPercent(fixArticles(text).split(SENTINEL).join(''));
 
   if (data.sen.length === 0) return text;
   return `${text}\n\n${randomItem(data.sen, rng)}`;

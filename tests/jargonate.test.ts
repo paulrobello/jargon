@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { jargonate, parseAdvTable, parseWordList, type JargonData } from '../src/jargonate';
+import { buildMatcher, jargonate, parseAdvTable, parseWordList, type JargonData } from '../src/jargonate';
 import { loadJargonData } from '../src/loadData';
 
 // rng always < any threshold → every roll substitutes; always picks list[0].
@@ -309,6 +309,80 @@ describe('output-coherence fixes', () => {
       });
       const result = jargonate('alpha, beta', data, 0, alwaysRng);
       expect(result).toContain('first, second');
+    });
+  });
+});
+
+describe('recorded engine follow-ups', () => {
+  describe('Fix A — preserve untouched input formatting', () => {
+    it('round-trips whitespace/indentation the engine never touched, at level 100', () => {
+      const data = makeData({
+        adj: ['synergistic'],
+        adv: new Map([['nonexistentword', ['should never fire']]]),
+      });
+      const input = 'keep  double  spaces\n    and indentation.';
+      const result = jargonate(input, data, 100, alwaysRng);
+      expect(result).toBe(`${input}\n\nCLOSER.`);
+    });
+  });
+
+  describe('Fix B — sentence-position-aware capitalization', () => {
+    it('capitalizes the replacement when the match is at a sentence start', () => {
+      const data = makeData({ adv: new Map([['friday', ['the fifth day of the week']]]) });
+      const result = jargonate('Friday we ship.', data, 0, alwaysRng);
+      expect(result).toContain('The fifth day of the week we ship.');
+    });
+
+    it('leaves the replacement as authored when the match is mid-sentence', () => {
+      const data = makeData({ adv: new Map([['friday', ['the fifth day of the week']]]) });
+      const result = jargonate('Ship by Friday now.', data, 0, alwaysRng);
+      expect(result).toContain('by the fifth day of the week');
+    });
+
+    it('still capitalizes a substitution-introduced sentence start (existing behavior)', () => {
+      const data = makeData({ adv: new Map([['we', ['the undersigned']]]) });
+      const result = jargonate('We agree.', data, 0, alwaysRng);
+      expect(result.startsWith('The undersigned agree.')).toBe(true);
+    });
+
+    it('preserves authored capitalization of an acronym replacement mid-sentence', () => {
+      const data = makeData({ adv: new Map([['ceo', ['Chief Executive Officer']]]) });
+      const result = jargonate('Our CEO spoke.', data, 0, alwaysRng);
+      expect(result).toContain('Chief Executive Officer');
+    });
+  });
+
+  describe('Fix C — cached matcher', () => {
+    it('produces consistent results across repeated calls with the same data object', () => {
+      const data = makeData({ adv: new Map([['cat', ['tiger team']]]) });
+      const first = jargonate('the cat sat', data, 0, alwaysRng);
+      const second = jargonate('the cat sat', data, 0, alwaysRng);
+      expect(first).toBe(second);
+    });
+
+    it('returns the identical compiled matcher for the same data.adv identity, and a new one for a structurally-equal clone', () => {
+      const data = makeData({ adv: new Map([['cat', ['tiger team']]]) });
+      const first = buildMatcher(data);
+      const second = buildMatcher(data);
+      expect(second).toBe(first);
+
+      const clone: JargonData = { ...data, adv: new Map(data.adv) };
+      const third = buildMatcher(clone);
+      expect(third).not.toBe(first);
+    });
+  });
+
+  describe('Fix D — documented guards', () => {
+    it('CAPITALIZED_LEAD_IN suppresses a bare-number substitution after any capitalized token (e.g. an acronym)', () => {
+      const data = makeData({ adv: new Map([['5', ['five']]]) });
+      const result = jargonate('CI&T 5 rollout', data, 0, alwaysRng);
+      expect(result).toContain('CI&T 5');
+    });
+
+    it('still spells out a bare number not preceded by a capitalized token', () => {
+      const data = makeData({ adv: new Map([['5', ['five']]]) });
+      const result = jargonate('in 5 days', data, 0, alwaysRng);
+      expect(result).toContain('in five days');
     });
   });
 });
