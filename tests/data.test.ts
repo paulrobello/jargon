@@ -36,7 +36,7 @@ describe('word list data files', () => {
   it('sen.txt closers are complete sentences ending with punctuation', () => {
     const content = read('sen.txt');
     const lines = content.split('\n').filter((l) => l.length > 0);
-    expect(lines.length).toBe(41);
+    expect(lines.length).toBe(42);
     expect(content.endsWith('\n')).toBe(true);
     for (const line of lines) {
       expect(line).toBe(line.trim());
