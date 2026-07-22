@@ -92,8 +92,8 @@ function matchCase(source: string, replacement: string): string {
   return replacement;
 }
 
-/** True at the very start of the string, or right after sentence-ending punctuation / a line break. */
-const SENTENCE_START = /(^|[.!?]["')\]]?[ \t\n]+|\n[ \t]*)$/;
+/** True at the very start of the string (leading whitespace included), or right after sentence-ending punctuation / a line break. */
+const SENTENCE_START = /(^[ \t\n]*|[.!?]["')\]]?[ \t\n]+|\n[ \t]*)$/;
 function isSentenceStart(precedingText: string, offset: number): boolean {
   return offset === 0 || SENTENCE_START.test(precedingText);
 }
