@@ -50,6 +50,19 @@ $(function(){
   exit;
 }
 
+if ($action !== 'jargonate') {
+    http_response_code(400);
+    exit;
+}
+
+if (!empty($_SERVER['HTTP_ORIGIN'])) {
+    $originHost = parse_url($_SERVER['HTTP_ORIGIN'], PHP_URL_HOST);
+    if ($originHost !== ($_SERVER['HTTP_HOST'] ?? null)) {
+        http_response_code(403);
+        exit;
+    }
+}
+
 function pickRand($list,$prepend=' ',$append=' ', $default = '', $level = 85){
 #die("<pre>\n".print_r($list,true)."</pre>");
   return ($default === 'X' || rand(0,100)>$level) ? $prepend . $list[rand(0,count($list)-1)] . $append : $default;
@@ -76,5 +89,6 @@ function jargonate($content,$level = 85){
     return $content;
 }
 
-echo jargonate($_POST["in"],(int)@$_GET['level']);
+header('Content-Type: text/plain; charset=UTF-8');
+echo htmlspecialchars(jargonate($_POST["in"],(int)@$_GET['level']), ENT_QUOTES, 'UTF-8');
 ?>
