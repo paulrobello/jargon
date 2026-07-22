@@ -270,4 +270,45 @@ describe('output-coherence fixes', () => {
       }
     });
   });
+
+  describe('Fix 6 — adjacent-substitution cooldown', () => {
+    it('skips a table substitution immediately adjacent (whitespace-only gap) to the previous one', () => {
+      const data = makeData({
+        adv: new Map([
+          ['alpha', ['first']],
+          ['beta', ['second']],
+        ]),
+      });
+      const result = jargonate('alpha beta gamma', data, 0, alwaysRng);
+      expect(result).toContain('first beta gamma');
+    });
+
+    it('fires both substitutions when they are not adjacent', () => {
+      const data = makeData({
+        adv: new Map([
+          ['alpha', ['first']],
+          ['beta', ['second']],
+        ]),
+      });
+      const result = jargonate('alpha gamma beta', data, 0, alwaysRng);
+      expect(result).toContain('first gamma second');
+    });
+
+    it('article-branch adjective insertion does not block an adjacent noun substitution', () => {
+      const data = makeData({ adj: ['synergistic'], adv: new Map([['plan', ['roadmap']]]) });
+      const result = jargonate('the plan works', data, 0, alwaysRng);
+      expect(result).toContain('the synergistic roadmap works');
+    });
+
+    it('a gap containing punctuation does not count as adjacent', () => {
+      const data = makeData({
+        adv: new Map([
+          ['alpha', ['first']],
+          ['beta', ['second']],
+        ]),
+      });
+      const result = jargonate('alpha, beta', data, 0, alwaysRng);
+      expect(result).toContain('first, second');
+    });
+  });
 });

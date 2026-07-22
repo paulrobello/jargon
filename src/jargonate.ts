@@ -138,6 +138,14 @@ export function jargonate(
   let text = content.length > MAX_INPUT_LENGTH ? content.slice(0, MAX_INPUT_LENGTH) : content;
   text = text.split(SENTINEL).join('');
 
+  // End offset (in the original string) of the last TABLE substitution that
+  // fired, so a second table substitution starting right after it (separated
+  // by whitespace only, no intervening word) can be suppressed — this is what
+  // stops adverbs from stacking on adjacent words ("furiously found delicately").
+  // Article-branch adjective insertions never read or write this: they're
+  // exempt from the cooldown in both directions.
+  let lastTableEnd: number | null = null;
+
   text = text.replace(buildMatcher(data), (match: string, ...rest: unknown[]) => {
     // Capture-group count varies with whether any table keys exist (the key
     // alternation group is only added when data.adv is non-empty), so pull
@@ -155,6 +163,8 @@ export function jargonate(
     const replacements = data.adv.get(match.toLowerCase());
     if (!replacements || !rolls(level, rng)) return match;
     if (/^\d+$/.test(match) && CAPITALIZED_LEAD_IN.test(string.slice(0, offset))) return match;
+    if (lastTableEnd !== null && /^\s+$/.test(string.slice(lastTableEnd, offset))) return match;
+    lastTableEnd = offset + match.length;
     return `${SENTINEL}${matchCase(match, randomItem(replacements, rng))}`;
   });
 
