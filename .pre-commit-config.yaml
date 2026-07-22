@@ -1,0 +1,47 @@
+# Pre-commit hooks for par-jargonator
+# Install: pre-commit install
+# Run manually: make pre-commit  (or pre-commit run --all-files)
+
+repos:
+  # Secret scanning (required) — pinned to exact revs.
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: detect-private-key
+      - id: check-merge-conflict
+      - id: check-json
+      - id: check-yaml
+      - id: mixed-line-ending
+
+  # TypeScript toolchain — delegated to the Makefile so pre-commit never
+  # re-declares invocations the Makefile already owns.
+  - repo: local
+    hooks:
+      - id: fmt
+        name: make fmt (biome format)
+        entry: make fmt
+        language: system
+        types: [ts]
+        pass_filenames: false
+      - id: lint
+        name: make lint (biome lint)
+        entry: make lint
+        language: system
+        types: [ts]
+        pass_filenames: false
+      - id: typecheck
+        name: make typecheck (tsc)
+        entry: make typecheck
+        language: system
+        types: [ts]
+        pass_filenames: false
+      - id: test
+        name: make test (vitest)
+        entry: make test
+        language: system
+        types: [ts]
+        pass_filenames: false

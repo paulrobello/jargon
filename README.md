@@ -1,6 +1,6 @@
 # PAR Jargonator
 
-A tiny PHP web toy that turns plain text into filler-laden "corporate jargon" through word substitution.
+A tiny client-side web toy that turns plain text into filler-laden "corporate jargon" through word substitution — now a static TypeScript app, served entirely from a browser with no backend.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -9,113 +9,102 @@ A tiny PHP web toy that turns plain text into filler-laden "corporate jargon" th
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [How It Works](#how-it-works)
-- [API Reference](#api-reference)
 - [Word List Data Files](#word-list-data-files)
 - [Project Structure](#project-structure)
+- [Development](#development)
+- [Deployment (GitHub Pages)](#deployment-github-pages)
 - [License](#license)
 
 ## Overview
 
-PAR Jargonator serves a single page with an input textarea and an output textarea. Paste in a sentence, click **Jargonate**, and the server hands back the same text padded out with extra adjectives, adverb-style phrases, and a closing filler sentence — the kind of thing that turns "we should finish this" into three clauses of buzzword padding.
+PAR Jargonator presents a mock interoffice memo: paste a plain sentence into the "Original Draft" panel, hit the **Jargonate** stamp, and the "Approved Copy" panel fills in with the same text padded out with extra adjectives, jargon-flavored word swaps, and a closing filler sentence — the kind of thing that turns "we should finish this" into three clauses of buzzword padding.
 
-There is no database, no user accounts, and no build step. The entire application is a handful of PHP files plus plain-text word lists.
+There is no server, no database, and no user accounts. All transformation logic runs in the browser; the word-list data is bundled into the app at build time.
 
-> **Note:** An earlier file in this repository, `jargonator.php`'s legacy sibling `jive.php`, has been permanently deleted. It was dead code — never included or referenced anywhere in the codebase — and it contained a racial slur and offensive ethnic stereotypes as literal string data. It is not sample content, not a reference implementation, and not present in any form in this repository going forward.
+> **Note:** An earlier version of this project ran on PHP with a server-side `?action=jargonate` endpoint. It has been fully ported to TypeScript and now runs client-side only, so it can be hosted as a static site (e.g. GitHub Pages). A previous file in this repository's history, a legacy `jive.php`, contained a racial slur and offensive ethnic stereotypes as literal string data; it was dead code, never referenced anywhere, and was permanently deleted before this port.
 
 ## Features
 
-- Single-endpoint text transformation with no client-side state
-- Data-driven vocabulary: substitution words live in plain `.txt` files, not hardcoded in PHP
-- Adjustable substitution frequency via a `level` parameter
-- Progressive enhancement: the form works as a normal POST even if JavaScript is disabled
-- Zero dependencies beyond a PHP runtime and a single CDN-hosted copy of jQuery
+- Single-page text transformation, entirely client-side — nothing you type is sent anywhere
+- Data-driven vocabulary: substitution words live in plain `.txt` files, bundled at build time rather than hardcoded
+- Adjustable substitution frequency via a "Buzzword Density" slider
+- Interoffice-memo themed UI: letterhead header, duplicate-form draft/approved-copy layout, and a rubber-stamp submit button
+- Zero runtime dependencies — the built site is static HTML/CSS/JS
 
 ## Prerequisites
 
-- PHP with `short_open_tag` behavior irrelevant (the app uses `<?php` throughout) — any current PHP release works
-- No Composer packages, no Node toolchain, no database
+- Node.js 20+ and npm
+- No database, no backend runtime
 
 ## Installation
 
-Clone the repository and serve the directory with any PHP-capable web server. There is no build step and nothing to install.
-
-For local development, PHP's built-in server is the fastest way to run it:
-
 ```bash
-make run
+npm install
 ```
-
-This is equivalent to `php -S localhost:8000`. Then open `http://localhost:8000/` in a browser.
-
-A `make lint` target is also available and runs `php -l` over every PHP file.
-
-For production, point an Apache or PHP-FPM/nginx vhost's document root at this directory. The bundled `.htaccess` (see [Project Structure](#project-structure)) assumes an Apache environment.
 
 ## Quick Start
 
-1. Start the server:
-   ```bash
-   make run
-   ```
-2. Open `http://localhost:8000/` in a browser.
-3. Type a sentence into the **Type Message here** textarea and click **Jargonate**.
-4. The jargon-padded result appears in the **Output** textarea.
+```bash
+make dev
+```
+
+Then open `http://localhost:8812/` in a browser. Type a sentence into **Original Draft**, adjust **Buzzword Density** if you like, and click the **Jargonate** stamp.
 
 ## How It Works
 
-The page's form POSTs the input text to `?action=jargonate` via a jQuery AJAX call. On the server, `index.php` validates the request and calls `jargonate()`, which loads word lists from the `.txt` data files and runs a series of regex-based substitutions — inserting extra adjectives around common words and swapping matched words for randomly chosen jargon-flavored replacements. The transformed text (plus a closing filler sentence) is escaped and returned as plain text, and the front-end JavaScript writes it straight into the output textarea.
+The word-list `.txt` files are bundled into the JS build as raw text (`src/loadData.ts`) and parsed into an adjective list, a filler-sentence list, and a word&rarr;replacement table (`src/jargonate.ts`). Clicking **Jargonate** runs `jargonate()`:
 
-## API Reference
+1. Optionally inserts a random adjective after standalone occurrences of "a", "the", or "is".
+2. Walks the word&rarr;replacement table and swaps matching whole words for a randomly chosen jargon replacement (or leaves the word unchanged, depending on the roll).
+3. Appends a random closing filler sentence.
 
-### `GET /?action=jargonate`
-
-**Purpose:** Transform submitted text into jargon-padded output.
-
-**Method:** `POST` (to the same URL as the `GET` query string above; the transform only runs once `action` is present)
-
-**Authentication:** None
-
-#### Request
-
-**Query Parameters:**
-
-| Parameter | Type | Required | Default | Description |
-|-----------|------|----------|---------|-------------|
-| `action` | string | Yes | — | Must be exactly `jargonate`. Omitting it (empty string) serves the HTML page instead. Any other non-empty value returns `400 Bad Request`. |
-| `level` | integer | No | `85` | Roughly 0–100. Tunes how often optional word substitutions fire: each optional substitution rolls a random number from 0–100 and only replaces the word if that roll exceeds `level`, so **lower values substitute more often** (heavier jargon) and **higher values substitute less often**. Omitting `level` (or passing `0`) falls back to the default of `85`; other out-of-range values (e.g. negative numbers or values above 100) are used as-is and produce near-constant or near-zero substitution rather than an error. |
-
-**Body Parameters (POST):**
-
-| Parameter | Type | Required | Description |
-|-----------|------|----------|-------------|
-| `in` | string | Yes | The text to transform. Missing or empty input is treated as an empty string rather than an error. Input longer than 8192 bytes is truncated before processing. |
-
-**Same-origin requirement:** If the request includes an `Origin` header, it must match the request's `Host` header or the server responds `403 Forbidden`. Requests with no `Origin` header (e.g. same-origin form submissions, most non-browser clients) are unaffected.
-
-#### Response
-
-A successful request returns `200 OK` with `Content-Type: text/plain; charset=UTF-8` and the HTML-escaped, jargon-padded text as the body. There is no JSON envelope — the entire response body is the transformed text.
+The "Buzzword Density" slider (0 = Plain English, 100 = Maximum Synergy) is inverted internally to the original substitution-frequency parameter, where a *lower* internal value means substitutions fire *more* often.
 
 ## Word List Data Files
 
-Substitution vocabulary lives entirely in plain-text files at the repository root rather than hardcoded in PHP, so the jargon vocabulary can be edited without touching code.
+Substitution vocabulary lives entirely in plain-text files under `src/data/` rather than hardcoded in TypeScript, so the jargon vocabulary can be edited without touching code.
 
 | File | Format |
 |------|--------|
 | `adj.txt` | Plain newline-delimited list — one word or phrase per line. |
-| `prep.txt` | Plain newline-delimited list — one word or phrase per line. Present in the repository but not currently loaded by `jargonator.php`. |
+| `prep.txt` | Plain newline-delimited list. Present in the repository but not currently loaded by the app. |
 | `sen.txt` | Plain newline-delimited list — one full filler sentence per line, appended as the closing line of jargonated output. |
 | `adv.txt` | CSV-like rows: `word,replacement1,replacement2,...`. The first field is the word to match; the remaining fields are candidate replacements, one of which is chosen at random. |
 | `rep.txt` | Same `word,replacement1,replacement2,...` format as `adv.txt`. Both files are loaded and merged into a single substitution table. |
 
 ## Project Structure
 
-- `index.php` — routes requests, serves the HTML page, and handles the `?action=jargonate` transform endpoint
-- `jargonator.php` — loads the word-list data files and returns them for use by `jargonate()`
-- `adj.txt`, `adv.txt`, `prep.txt`, `rep.txt`, `sen.txt` — word-list data files (see [above](#word-list-data-files))
-- `css/` — stylesheets (`normalize.css`, `main.css`)
-- `.htaccess` — generic [h5bp](https://github.com/h5bp/server-configs-apache) Apache hardening and performance boilerplate; not specific to this application
-- `Makefile` — `make run` starts the local dev server; `make lint` runs `php -l` over every PHP file
+- `index.html` — the app shell (memo layout markup)
+- `src/main.ts` — DOM wiring: slider, form submit, example chips, copy-to-clipboard
+- `src/jargonate.ts` — the ported transformation logic (`jargonate()`, `pickRand()`, word-list parsing)
+- `src/loadData.ts` — bundles the `.txt` word lists into the app at build time
+- `src/style.css` — the interoffice-memo visual design
+- `src/data/` — word-list data files (see [above](#word-list-data-files))
+- `tests/jargonate.test.ts` — Vitest unit tests for the transformation logic
+- `Makefile` — standard targets: `dev`, `build`, `test`, `lint`, `fmt`, `typecheck`, `checkall`
+- `.github/workflows/ci.yml` — lint/typecheck/test/build on every push and PR
+- `.github/workflows/deploy.yml` — builds and deploys `dist/` to GitHub Pages on pushes to `main`/`master`
+
+## Development
+
+```bash
+make dev         # start the Vite dev server on :8812
+make test         # run the Vitest suite
+make lint         # Biome lint
+make fmt          # Biome format (writes)
+make typecheck    # tsc --noEmit
+make checkall     # fmt:check + lint + typecheck + test + build
+```
+
+## Deployment (GitHub Pages)
+
+The `deploy` workflow builds the Vite app and publishes `dist/` via GitHub's official Pages Actions (`actions/upload-pages-artifact` + `actions/deploy-pages`). To enable it on a new repository:
+
+1. Push this repository to GitHub.
+2. In the repository settings, under **Pages**, set **Source** to **GitHub Actions**.
+3. Push to `main` (or `master`) — the workflow builds and deploys automatically.
+
+The Vite build uses a relative `base: './'` so the site works whether it's served from a custom domain, a user page, or a project page under a subpath.
 
 ## License
 

@@ -5,24 +5,31 @@ on:
   pull_request:
 
 jobs:
-  lint-and-test:
+  build-and-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: shivammathur/setup-php@v2
+      - uses: actions/setup-node@v7
         with:
-          php-version: '8.3'
-          tools: composer
-
-      - name: Lint PHP files
-        run: |
-          for f in $(find . -name '*.php'); do
-            php -l "$f"
-          done
+          node-version: '24'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: composer install --no-progress --prefer-dist
+        run: npm ci
 
-      - name: Run PHPUnit
-        run: composer test
+      - name: Format check
+        run: npm run fmt:check
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm run test
+
+      - name: Build
+        run: npm run build

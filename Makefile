@@ -1,7 +1,33 @@
-.PHONY: lint run
+.PHONY: install dev run build test lint fmt typecheck checkall pre-commit pre-commit-update
+
+install:
+	npm install
+
+dev:
+	npm run dev
+
+run: dev
+
+build:
+	npm run build
+
+test:
+	npm run test
 
 lint:
-	@for f in $$(find . -path ./vendor -prune -o -name '*.php' -print); do php -l "$$f" || exit 1; done
+	npm run lint
 
-run:
-	php -S localhost:8000
+fmt:
+	npm run fmt
+
+typecheck:
+	npm run typecheck
+
+checkall:
+	npm run checkall
+
+pre-commit:
+	pre-commit run --all-files
+
+pre-commit-update:
+	pre-commit autoupdate
