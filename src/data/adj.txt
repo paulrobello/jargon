@@ -11,6 +11,7 @@ best-of-breed
 bleeding-edge
 blockchain-adjacent
 bold
+brand-safe
 buzzword-compliant
 carbon-neutral
 category-defining
