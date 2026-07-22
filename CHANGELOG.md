@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - `.github/workflows/ci.yml` now runs the Node/TypeScript toolchain (format check, lint, typecheck, test, build) instead of PHP lint + PHPUnit.
 - Corrected the page's `<meta name="description">` tag, which previously read "PAR Realtime Chat" (leftover from an unrelated project).
+- Extracted the density-tick threshold logic (`DENSITY_LABELS`, `activeTickIndex`) from `main.ts` into `src/density.ts` so it's unit-testable without a DOM.
 
 ### Removed
 - The PHP runtime and its toolchain: `index.php`, `jargonator.php`, `composer.json`/`composer.lock`, `vendor/`, `tests/harness.php`, `tests/JargonatorTest.php`, and `.htaccess` (Apache-specific, not applicable to static hosting).
@@ -38,6 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Curated and expanded word lists: `adj.txt` rebuilt as 140 corporate-buzzword entries; 12 new consultant closers in `sen.txt`; `adv.txt` and `rep.txt` grammar-fixed with non-sequiturs removed and 39 new corporate-parody rows added with clause-safe conjunction replacements.
 - Output-coherence: percent smoothing (`50%` → `fifty percent`, not `fifty%`), a version-number guard so product/version numbers like "Fable 5" no longer get spelled out, and an article-insertion stopword list so no adjective gets wedged before words like "same".
 - Modal-safe phrase rows for "have to"/"has to"/"had to" so an adverb no longer splits the modal (e.g. "have furiously to"), and clause-safe replacements for "know"/"think"; removed noun/verb-ambiguous or nonsense rows (`use`, `support`, `help`, `plan`/`plans`) that broke on verb usage or clause objects.
+- `rep.txt` row repairs: removed the noun/verb-ambiguous `uses` row; added phrase-safe `used to`, `plan to`, and `plans to` rows to restore idiom/joke coverage without breaking agreement; fixed `employees` (mass-noun "human capital" broke plural agreement) and `later` (adjectival use broke with launch-phase phrasing); deleted three dead duplicate rows (`durable`, `lighten`, `warning`) and four `adv.txt` rows (`gone`, `write`, `writing`, `wrote`) shadowed by same-key `rep.txt` overrides. Hardened `tests/data.test.ts` with within-file key-uniqueness and dead-article-key (`a`/`an`/`the`) lint checks.
 - Output-rhythm at maximum density: an adjacent-substitution cooldown skips a second table replacement immediately after another (whitespace-only gap), preventing stacked adverb runs like "furiously found delicately" and "dashingly immediately"; and 162 `adv.txt` main-verb rows were reordered from post-verb to pre-verb adverb placement (`found,found delicately` → `found,delicately found`) so an adverb no longer lands between a verb and its direct object, while auxiliary/copula/modal rows (`is`, `has`, `will`, etc.) keep their post-verb order.
 
 _The three items in the "Fixed" section preceding the Level 0 fix describe issues with the PHP implementation before it was retired; they no longer apply to the current client-side app, which has no server endpoint._

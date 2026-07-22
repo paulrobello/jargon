@@ -90,7 +90,6 @@ give,exclusively donate,magnanimously distribute
 gives,correctly donates,generously distributes
 giving,meaningfully donating,mercilessly distributing
 go,instinctively go,undoubtedly go
-gone,scientifically gone,slowly gone
 had,had respectfully,had completely
 handled,respectably manipulated,poorly manipulated
 handling,marvelously manipulating,expertly manipulating
@@ -224,9 +223,6 @@ will,absolutely will,abruptly will
 woke,wearily woke,rudely woke
 worked,tirelessly worked,slowly worked
 working,fiendishly working,endlessly working
-write,abruptly write
-writing,unscientifically writing,repeatedly writing
-wrote,awkwardly wrote,impressively wrote
 yell,automatically yell,powerfully yell
 yelled,comically yelled,potently yelled
 yelling,accidentally yelling,incessantly yelling

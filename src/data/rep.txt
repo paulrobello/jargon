@@ -749,7 +749,6 @@ dry,mummified,arid
 drying,mummifying
 dryness,mummification
 durability,instransmutability
-durable,instransmutable
 durable,intransmutable
 duties,obligations
 duty,obligation
@@ -1161,7 +1160,6 @@ liberals,progressives
 lied,misrepresented,fabricated,prevaricated
 life,viableness
 light,luminous energy
-lighten,alleviate
 lighten,alleviate
 lighting,luminous energy expenditures
 lights,luminous energies
@@ -1986,7 +1984,6 @@ urgent,absolutely the highest of all high priorities
 usage,mode of employ
 usages,modes of employ
 useful,serviceable
-uses,utilizes,employs
 vacation,detoxification
 vacations,detoxifications
 valuable,priceless
@@ -2010,7 +2007,6 @@ walk,ambulate,stroll
 walked,ambulated,strolled
 walking,ambulating,strolling
 walks,ambulates,strolls
-warning,admonitory notification
 warning,admonitory notifications
 wash,cleanse
 washed,cleansed
@@ -2115,12 +2111,12 @@ emails,asynchronous touchpoints,inbox deliverables
 lunch,working lunch,offline nourishment sync
 coffee,productivity fluid,liquid alignment
 boss,people leader,accountability partner
-employees,human capital,individual contributors
+employees,individual contributors,members of the workforce
 customers,valued stakeholders,revenue partners
 goal,north-star metric,key result
 goals,north-star metrics,key results
 soon,within the current sprint,before end of quarter
-later,in a fast-follow,post-launch
+later,subsequently,in due course
 think,assess,posit
 thinking,ideating,strategizing
 using,leveraging,operationalizing
@@ -2136,3 +2132,6 @@ together,in lockstep,cross-functionally
 have to,must necessarily,find it necessary to
 has to,must necessarily,finds it necessary to
 had to,found it necessary to,had no strategic alternative but to
+used to,historically would,once would
+plan to,intend strategically to,have a roadmap to
+plans to,intends strategically to,has a roadmap to

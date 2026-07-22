@@ -1,3 +1,4 @@
+import { activeTickIndex, DENSITY_LABELS } from './density';
 import { jargonate } from './jargonate';
 import { loadJargonData } from './loadData';
 
@@ -21,14 +22,6 @@ const copyButton = document.querySelector<HTMLButtonElement>('#copy');
 const statusEl = document.querySelector<HTMLElement>('#status');
 const memoDate = document.querySelector<HTMLTimeElement>('#memo-date');
 
-const DENSITY_LABELS: ReadonlyArray<[number, string]> = [
-  [20, 'Plain English'],
-  [40, 'Light'],
-  [60, 'Moderate'],
-  [80, 'Heavy'],
-  [100, 'Maximum Synergy'],
-];
-
 function renderTicks(): void {
   tickRow.replaceChildren(
     ...DENSITY_LABELS.map(([, label]) => {
@@ -42,8 +35,7 @@ function renderTicks(): void {
 
 function updateActiveTick(): void {
   const value = Number(densitySlider.value);
-  const activeIndex = DENSITY_LABELS.findIndex(([threshold]) => value <= threshold);
-  const index = activeIndex === -1 ? DENSITY_LABELS.length - 1 : activeIndex;
+  const index = activeTickIndex(value);
   const ticks = Array.from(tickRow.querySelectorAll<HTMLElement>('.level-tick'));
   ticks.forEach((tick, i) => {
     tick.classList.toggle('level-tick--active', i === index);

@@ -33,6 +33,32 @@ describe('word list data files', () => {
     }
   });
 
+  it('adv.txt and rep.txt keys are unique within each file', () => {
+    for (const file of ['adv.txt', 'rep.txt']) {
+      const lines = read(file)
+        .split('\n')
+        .filter((l) => l.length > 0);
+      const seen = new Set<string>();
+      for (const line of lines) {
+        const key = line.split(',', 1)[0].toLowerCase();
+        expect(seen.has(key), `${file}: duplicate key "${key}"`).toBe(false);
+        seen.add(key);
+      }
+    }
+  });
+
+  it('adv.txt and rep.txt have no rows keyed on the bare articles a/an/the', () => {
+    for (const file of ['adv.txt', 'rep.txt']) {
+      const lines = read(file)
+        .split('\n')
+        .filter((l) => l.length > 0);
+      for (const line of lines) {
+        const key = line.split(',', 1)[0].toLowerCase();
+        expect(['a', 'an', 'the'], `${file}: dead article-key row "${line}"`).not.toContain(key);
+      }
+    }
+  });
+
   it('sen.txt closers are complete sentences ending with punctuation', () => {
     const content = read('sen.txt');
     const lines = content.split('\n').filter((l) => l.length > 0);
