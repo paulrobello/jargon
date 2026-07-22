@@ -8,21 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2026-07-22]
 
 ### Added
-- Single-pass cascade-proof jargon engine that prevents re-substitution of already-replaced text, ensuring replacements do not compound unpredictably.
-- Grammatical refinements: automatic a/an agreement based on following word's first letter, and capitalization preservation when replacing capitalized words.
-- Five-label density slider with inline tick labels (Plain English, Light Jargon, Moderate, Heavy Synergy, Maximum Synergy) replacing the top-right numerical readout.
-
-### Fixed
-- Level 0 maximum-density setting now correctly applies maximum substitution frequency; previously fell back to default level.
-- Curated and expanded word lists: `adj.txt` rebuilt as 140 corporate-buzzword entries; 12 new consultant closers in `sen.txt`; `adv.txt` and `rep.txt` grammar-fixed with non-sequiturs removed and 39 new corporate-parody rows added with clause-safe conjunction replacements.
-
-### Removed
-- `pickRand()` helper function (internal only; not part of public API).
-- Top-right density level readout UI element.
-
-## [Unreleased]
-
-### Added
 - Full port from PHP to a client-side TypeScript app (Vite build), so the site can be hosted as static files on GitHub Pages with no backend.
 - Redesigned UI: an interoffice-memo aesthetic with a letterhead header, a duplicate-form draft/approved-copy layout, a rubber-stamp submit button, and a "Buzzword Density" slider exposing the substitution-frequency parameter that was previously only reachable via a query string.
 - Vitest unit tests (`tests/jargonate.test.ts`) covering word-list parsing and `jargonate()` boundary behavior, replacing the PHPUnit suite.
@@ -31,6 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `README.md` documenting setup, the "How It Works" data flow, and the word-list file formats.
 - `LICENSE` (MIT).
 - This changelog.
+- Single-pass cascade-proof jargon engine that prevents re-substitution of already-replaced text, ensuring replacements do not compound unpredictably.
+- Grammatical refinements: automatic a/an agreement based on following word's first letter, and capitalization preservation when replacing capitalized words.
+- Five-label density slider with inline tick labels (Plain English, Light Jargon, Moderate, Heavy Synergy, Maximum Synergy) on the slider line, with the active density label highlighted, replacing the top-right numerical readout.
 
 ### Changed
 - `.github/workflows/ci.yml` now runs the Node/TypeScript toolchain (format check, lint, typecheck, test, build) instead of PHP lint + PHPUnit.
@@ -39,10 +27,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - The PHP runtime and its toolchain: `index.php`, `jargonator.php`, `composer.json`/`composer.lock`, `vendor/`, `tests/harness.php`, `tests/JargonatorTest.php`, and `.htaccess` (Apache-specific, not applicable to static hosting).
 - `jive.php` — unreferenced dead code containing a racial slur and offensive ethnic stereotypes as literal string data. It was never included or executed by any code path and has been permanently deleted.
+- `pickRand()` helper function (internal only; not part of public API).
+- Top-right density level readout UI element.
 
 ### Fixed
 - A fatal parse error that prevented the application from running under any standard PHP configuration.
 - Reflected, unescaped output on the `?action=jargonate` endpoint; output is now HTML-escaped.
 - The `?action=` parameter previously accepted any non-empty value; it now validates against `jargonate` and rejects anything else with `400 Bad Request`.
+- Level 0 maximum-density setting now correctly applies maximum substitution frequency; previously fell back to default level.
+- Curated and expanded word lists: `adj.txt` rebuilt as 140 corporate-buzzword entries; 12 new consultant closers in `sen.txt`; `adv.txt` and `rep.txt` grammar-fixed with non-sequiturs removed and 39 new corporate-parody rows added with clause-safe conjunction replacements.
 
-_The three items above describe fixes made to the PHP implementation before it was retired; they no longer apply to the current client-side app, which has no server endpoint._
+_The three items in the "Fixed" section preceding the Level 0 fix describe issues with the PHP implementation before it was retired; they no longer apply to the current client-side app, which has no server endpoint._
