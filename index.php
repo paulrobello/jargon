@@ -46,7 +46,7 @@ $(function(){
 </script>
 </body>
 </html>
-<?  
+<?php
   exit;
 }
 
