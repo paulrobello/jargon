@@ -1,6 +1,8 @@
 export const DEFAULT_JARGON_LEVEL = 85;
 export const MAX_INPUT_LENGTH = 8192;
 
+export type Rng = () => number;
+
 export interface JargonData {
   adj: string[];
   sen: string[];
@@ -11,62 +13,121 @@ function escapeRegExp(word: string): string {
   return word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function randomInt(maxInclusive: number): number {
-  return Math.floor(Math.random() * (maxInclusive + 1));
+function randomItem<T>(list: T[], rng: Rng): T {
+  return list[Math.min(list.length - 1, Math.floor(rng() * list.length))];
 }
 
 /**
- * Mirrors the PHP original's mt_rand(0,100)>level roll: lower level = more
- * frequent substitution. forceSubstitute bypasses the roll entirely.
+ * Roll semantics: lower level = more frequent substitution, linearly from
+ * 100% at level 0 to 0% at level 100 (rng is uniform on [0, 1)).
  */
-export function pickRand(
-  list: string[],
-  prepend = ' ',
-  append = ' ',
-  fallback = '',
-  level: number = DEFAULT_JARGON_LEVEL,
-  forceSubstitute = false,
-): string {
-  if (list.length === 0) return fallback;
-  if (forceSubstitute || randomInt(100) > level) {
-    return prepend + list[randomInt(list.length - 1)] + append;
-  }
-  return fallback;
+function rolls(level: number, rng: Rng): boolean {
+  return rng() < (100 - level) / 100;
 }
 
 export function parseWordList(raw: string): string[] {
-  return raw.split('\n');
+  return raw
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
 }
 
 /**
- * word,replacement1,replacement2,... rows from adv.txt and rep.txt, merged
- * into one table keyed by first-appearance order (matches PHP array semantics
- * where re-assigning an existing key updates its value but not its position).
+ * word,replacement1,replacement2,... rows from adv.txt and rep.txt merged into
+ * one table. Keys are lowercased for case-insensitive lookup; later rows
+ * (rep.txt) override earlier ones (adv.txt).
  */
 export function parseAdvTable(advRaw: string, repRaw: string): Map<string, string[]> {
   const table = new Map<string, string[]>();
   for (const rawLine of `${advRaw}\n${repRaw}`.split('\n')) {
     const line = rawLine.trim();
     if (!line) continue;
-    const fields = line.split(',');
-    const word = fields.shift();
-    if (word === undefined) continue;
-    table.set(word, fields);
+    const fields = line.split(',').map((field) => field.trim());
+    const word = fields.shift()?.toLowerCase();
+    if (!word) continue;
+    const replacements = fields.filter((field) => field.length > 0);
+    if (replacements.length > 0) table.set(word, replacements);
   }
   return table;
 }
 
-export function jargonate(content: string, data: JargonData, level: number = DEFAULT_JARGON_LEVEL): string {
-  const effectiveLevel = level || DEFAULT_JARGON_LEVEL;
+/** Wrap a key in word boundaries only where its edges are word characters. */
+function boundaryWrap(key: string): string {
+  const lead = /^\w/.test(key) ? '\\b' : '';
+  const tail = /\w$/.test(key) ? '\\b' : '';
+  return lead + escapeRegExp(key) + tail;
+}
+
+/**
+ * One alternation over the article rule plus every table key, longest key
+ * first so e.g. "answers" wins over "answer" at the same position.
+ */
+function buildMatcher(data: JargonData): RegExp {
+  const keys = [...data.adv.keys()].sort((a, b) => b.length - a.length).map(boundaryWrap);
+  const keyAlternation = keys.length > 0 ? `|(${keys.join('|')})` : '';
+  return new RegExp(`\\b(a|an|the)\\b${keyAlternation}`, 'gi');
+}
+
+/** Uppercase the replacement's first letter when the source word had one. */
+function matchCase(source: string, replacement: string): string {
+  if (/^[A-Z]/.test(source) && replacement.length > 0) {
+    return replacement.charAt(0).toUpperCase() + replacement.slice(1);
+  }
+  return replacement;
+}
+
+/**
+ * Heuristic a/an choice: vowel-initial words take "an" except common
+ * consonant-sounding starts (unique, user, one, european, ...).
+ */
+const CONSONANT_SOUND = /^(uniq|unit|univ|use|user|one|once|eu|utop|ubiq)/i;
+
+function articleFor(word: string): 'a' | 'an' {
+  if (CONSONANT_SOUND.test(word)) return 'a';
+  return /^[aeiou]/i.test(word) ? 'an' : 'a';
+}
+
+/** Fix a/an agreement against whatever word now follows the article. */
+function fixArticles(text: string): string {
+  return text.replace(
+    /\b(a|an)([ \t]+)([A-Za-z][\w-]*)/gi,
+    (_match, article: string, gap: string, next: string) => `${matchCase(article, articleFor(next))}${gap}${next}`,
+  );
+}
+
+function normalizeWhitespace(text: string): string {
+  return text
+    .replace(/[ \t]{2,}/g, ' ')
+    .replace(/[ \t]+([.,;:!?])/g, '$1')
+    .replace(/^[ \t]+|[ \t]+$/gm, '');
+}
+
+/**
+ * Single left-to-right pass: each match is replaced at most once and the
+ * replacement text is emitted verbatim, so substitutions can never cascade.
+ */
+export function jargonate(
+  content: string,
+  data: JargonData,
+  level: number = DEFAULT_JARGON_LEVEL,
+  rng: Rng = Math.random,
+): string {
   let text = content.length > MAX_INPUT_LENGTH ? content.slice(0, MAX_INPUT_LENGTH) : content;
 
-  text = text.replace(/\b(a|the|is)\b/gi, (match) => match + pickRand(data.adj, '', ' ', '', effectiveLevel));
+  text = text.replace(buildMatcher(data), (match, article: string | undefined) => {
+    if (article !== undefined) {
+      if (data.adj.length === 0 || !rolls(level, rng)) return match;
+      const adjective = randomItem(data.adj, rng);
+      const agreed = article.toLowerCase() === 'the' ? article : matchCase(article, articleFor(adjective));
+      return `${agreed} ${adjective}`;
+    }
+    const replacements = data.adv.get(match.toLowerCase());
+    if (!replacements || !rolls(level, rng)) return match;
+    return matchCase(match, randomItem(replacements, rng));
+  });
 
-  for (const [word, replacements] of data.adv) {
-    const pattern = new RegExp(`\\b${escapeRegExp(word)}\\b`, 'gi');
-    text = text.replace(pattern, (match) => pickRand(replacements, ' ', ' ', match, effectiveLevel));
-  }
+  text = normalizeWhitespace(fixArticles(text));
 
-  text += `\n\n${pickRand(data.sen, '', '', '', DEFAULT_JARGON_LEVEL, true)}`;
-  return text;
+  if (data.sen.length === 0) return text;
+  return `${text}\n\n${randomItem(data.sen, rng)}`;
 }
