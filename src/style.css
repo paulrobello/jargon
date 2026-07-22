@@ -251,14 +251,18 @@ textarea:focus {
   margin: 1.9rem 0 0;
 }
 
-.output-wrap {
-  position: relative;
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.panel-header label {
+  margin-bottom: 0;
 }
 
 .stamp-mark {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
   background: var(--paper-panel);
   border: 3px solid var(--stamp-red);
   box-shadow: 0 2px 6px rgba(28, 26, 23, 0.25);
@@ -269,9 +273,8 @@ textarea:focus {
   letter-spacing: 0.1em;
   font-size: 0.75rem;
   padding: 0.3rem 0.7rem;
-  transform: rotate(-9deg) scale(1.4);
+  transform: rotate(-6deg);
   opacity: 0;
-  pointer-events: none;
 }
 
 .stamp-mark--visible {
@@ -365,15 +368,15 @@ textarea:focus {
 @keyframes stamp-down {
   0% {
     opacity: 0;
-    transform: rotate(-9deg) scale(1.8);
+    transform: rotate(-6deg) scale(1.8);
   }
   60% {
     opacity: 1;
-    transform: rotate(-9deg) scale(0.95);
+    transform: rotate(-6deg) scale(0.95);
   }
   100% {
     opacity: 1;
-    transform: rotate(-9deg) scale(1);
+    transform: rotate(-6deg) scale(1);
   }
 }
 

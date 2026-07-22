@@ -57,10 +57,12 @@
       <div class="tear-line" aria-hidden="true"></div>
 
       <div class="panel panel--approved">
-        <label for="out">Approved Copy</label>
+        <div class="panel-header">
+          <label for="out">Approved Copy</label>
+          <div class="stamp-mark" id="stamp-mark" aria-hidden="true">Processed</div>
+        </div>
         <div class="output-wrap">
           <textarea id="out" name="out" readonly></textarea>
-          <div class="stamp-mark" id="stamp-mark" aria-hidden="true">Processed</div>
         </div>
         <button type="button" id="copy" class="copy-btn">Copy to Clipboard</button>
       </div>
