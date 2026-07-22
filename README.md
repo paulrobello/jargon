@@ -76,7 +76,7 @@ Substitution vocabulary lives entirely in plain-text files under `src/data/` rat
 
 - `index.html` — the app shell (memo layout markup)
 - `src/main.ts` — DOM wiring: slider, form submit, example chips, copy-to-clipboard
-- `src/jargonate.ts` — the ported transformation logic (`jargonate()`, `pickRand()`, word-list parsing)
+- `src/jargonate.ts` — the ported transformation logic (`jargonate()`, word-list parsing)
 - `src/loadData.ts` — bundles the `.txt` word lists into the app at build time
 - `src/style.css` — the interoffice-memo visual design
 - `src/data/` — word-list data files (see [above](#word-list-data-files))

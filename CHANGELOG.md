@@ -5,12 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2026-07-22]
+
+### Added
+- Single-pass cascade-proof jargon engine that prevents re-substitution of already-replaced text, ensuring replacements do not compound unpredictably.
+- Grammatical refinements: automatic a/an agreement based on following word's first letter, and capitalization preservation when replacing capitalized words.
+- Five-label density slider with inline tick labels (Plain English, Light Jargon, Moderate, Heavy Synergy, Maximum Synergy) replacing the top-right numerical readout.
+
+### Fixed
+- Level 0 maximum-density setting now correctly applies maximum substitution frequency; previously fell back to default level.
+- Curated and expanded word lists: `adj.txt` rebuilt as 140 corporate-buzzword entries; 12 new consultant closers in `sen.txt`; `adv.txt` and `rep.txt` grammar-fixed with non-sequiturs removed and 39 new corporate-parody rows added with clause-safe conjunction replacements.
+
+### Removed
+- `pickRand()` helper function (internal only; not part of public API).
+- Top-right density level readout UI element.
+
 ## [Unreleased]
 
 ### Added
 - Full port from PHP to a client-side TypeScript app (Vite build), so the site can be hosted as static files on GitHub Pages with no backend.
 - Redesigned UI: an interoffice-memo aesthetic with a letterhead header, a duplicate-form draft/approved-copy layout, a rubber-stamp submit button, and a "Buzzword Density" slider exposing the substitution-frequency parameter that was previously only reachable via a query string.
-- Vitest unit tests (`tests/jargonate.test.ts`) covering `pickRand()`, word-list parsing, and `jargonate()` boundary behavior, replacing the PHPUnit suite.
+- Vitest unit tests (`tests/jargonate.test.ts`) covering word-list parsing and `jargonate()` boundary behavior, replacing the PHPUnit suite.
 - `.github/workflows/deploy.yml` — builds and deploys to GitHub Pages via `actions/upload-pages-artifact` + `actions/deploy-pages`.
 - Biome for formatting/linting, and a `.pre-commit-config.yaml` with pinned `gitleaks` + `detect-private-key` secret scanning.
 - `README.md` documenting setup, the "How It Works" data flow, and the word-list file formats.
