@@ -323,7 +323,6 @@ book,tome,volume
 books,tomes,volumes
 booth,enclosed compartment
 booths,enclosed compartments
-boss,pointy-haired person of seeming authority,pointy-haired supervisor
 bosses,pointy-haired persons of seeming authority,pointy-haired supervisors
 boyfriend,significant other,partner
 boyfriends,significant others,partners
@@ -341,7 +340,6 @@ briefcase,business luggage,hidden-office supply containment unit
 briefcases,hidden-office supply containment units
 briefing,condensed transfer of data
 briefs,condensed statement
-budget,financial quantitative statement
 budgetary,income and expenditure control
 budgeted,financially preplanned
 budgeting,formulating a quantitative statement
@@ -438,7 +436,6 @@ clothes,attire
 cock,rooster
 cocks,roosters
 code,building blocks
-coffee,dark invigorating beverage,java
 coffees,dark invigorating beverages
 cold,frigid,less than freezing
 collaborate,temporarily subsume differences to effect mutually beneficial results
@@ -572,7 +569,6 @@ curiosity,interestedness
 curious,inquisitive
 currently,at the present time
 customer,goods and services purchaser,target audience member
-customers,goods and services purchasers,target audience members
 cutback,bloodletting
 cute,delightfully pretty
 cyan,greenish blue
@@ -590,8 +586,6 @@ data,Commander Data
 daughter,brilliant beautiful child,offspring
 day,24 hour period
 days,24 hour periods
-deadline,arbitrary non-negotiable line in the sand
-deadlines,arbitrary non-negotiable lines in the sand
 deal,transaction involving a level of assumed trust
 dealer,distribution technician
 deals,transactions involving a level of assumed trust
@@ -780,12 +774,9 @@ elegant,discriminating,harmoniously simple
 elegantly,discriminatingly
 elevator,vertical transportation unit
 elevators,vertical transportation units
-email,electronically transferred communication
-emails,electronically transferred communications
 emergencies,eventualities
 emergency,eventuality
 employee,foot soldier,lackey,office chair-warmer
-employees,foot soldiers,lackeys,office chair-warmers
 employer,master,commander
 employers,masters,commanders
 enclosure,circumvallation
@@ -944,8 +935,6 @@ glad,showing joy and pleasure
 glass,translucent super-cooled liquid
 glasses,frame held translucent super-cooled liquid polished lens
 glue,permanent bonding chemical
-goal,objective
-goals,objectives
 god,omnipotent being
 godless,wicked and impious
 gods,omnipotent beings
@@ -1034,8 +1023,6 @@ hurts,negatively impacts
 husband,significant other,partner,spouse
 husbands,significant others,partners,spouses
 icon,symbolic representation
-idea,concept,formative notion
-ideas,concepts,formative notions
 idiot,incredibly slow witted in-duh-vidual,mentally impaired person
 idiots,incredibly slow witted in-duh-viduals,mentally impaired person
 ignorance,uninformed state
@@ -1211,7 +1198,6 @@ lots,large amounts
 loud,plangent
 luck,stroke of good fortune
 lucky,fortunate
-lunch,midday consumption of proteins and carbohydrates
 lunches,midday consumptions of proteins and carbohydrates
 machine,device with or without moving parts
 machines,devices with or without moving parts
@@ -1253,8 +1239,6 @@ means,wherewithal
 meatspace,the physical world
 mediocrity,acceptable state
 meet,rendezvous
-meeting,symposium,gathering
-meetings,symposiums,gatherings
 member,tendril
 members,tendrils
 memo,memorandum
@@ -1294,7 +1278,6 @@ modern,impressively up to date
 moisture,humidity
 monday,the first day of the week
 mondays,the first days of the week
-money,medium of exchange,currency,lucre,wampum,bread,mazuma,moola
 monies,mediums of exchange,currencies
 monitor,visual display system
 monitoring,spying on,paying close attention to
@@ -1520,8 +1503,6 @@ prints,typographs
 priorities,precedencies
 priority,precedence
 proactive,clairvoyant
-problem,situation which presents difficulty
-problems,situations which present difficulty
 producer,haberdasher
 producers,haberdashers
 product,fruit of creative effort
@@ -1794,7 +1775,6 @@ solutions,determinations
 some,an unspecified number
 sometimes,occasionally but not often
 son,handsome brilliant child,male offspring
-soon,in the next month or so,real soon now
 sorry,commiserative
 soul,emotional or moral nature
 souls,emotional or moral natures
@@ -1827,8 +1807,6 @@ starch,farinaceous
 starches,farinaceouses
 starlight,electromagnetic radiation from luminous celestial bodies of hot gas
 stars,luminous celestial bodies of hot gas
-start,originate
-started,originated
 starting,originating
 starts,originates
 startup,starving enterprise
@@ -1907,8 +1885,6 @@ teach,tutor,persuade
 teacher,instructor,pundit
 teachers,instructors,pundits
 teaches,tutors,persuades
-team,paramilitary organization
-teams,paramilitary organizations
 techno-geek,technology superhero
 techno-geeks,technology superheroes
 technology,super technology,powerful-yet-easy-to-use technology,user-friendly technology
@@ -1949,7 +1925,6 @@ time,non-spatial continuum
 times,non-spatial continuums
 tiny,microscopic,minuscule,diminutive
 today,the day after yesterday,the day before tomorrow
-together,symbiotic
 toilet,receptacle of vile filth and waste product
 toilets,receptacles of vile filth and waste product
 told,articulated to
@@ -2011,7 +1986,6 @@ upgrade,improve status
 urgent,absolutely the highest of all high priorities
 usage,mode of employ
 usages,modes of employ
-use,utilize,employ
 useful,serviceable
 uses,utilizes,employs
 vacation,detoxification
@@ -2125,3 +2099,42 @@ zest,piquancy
 zipper,interlocking teeth fastening device
 zoo,zoological garden
 xojet,the place where one flys beautifly
+meeting,alignment ceremony,synergy summit,stakeholder convergence
+meetings,alignment ceremonies,synergy summits,stakeholder convergences
+problem,opportunity space,growth vector,learning moment
+problems,opportunity spaces,growth vectors,learning moments
+idea,thought-leadership artifact,ideation deliverable
+ideas,thought-leadership artifacts,ideation deliverables
+talk,sync,align,touch base
+talked,synced,aligned,touched base
+deadline,success horizon,delivery runway
+deadlines,success horizons,delivery runways
+budget,resource envelope,investment appetite
+money,capital allocation,monetizable value
+email,asynchronous touchpoint,inbox deliverable
+emails,asynchronous touchpoints,inbox deliverables
+lunch,working lunch,offline nourishment sync
+coffee,productivity fluid,liquid alignment
+boss,people leader,accountability partner
+employees,human capital,individual contributors
+customers,valued stakeholders,revenue partners
+plan,roadmap,strategic framework
+plans,roadmaps,strategic frameworks
+goal,north-star metric,key result
+goals,north-star metrics,key results
+soon,within the current sprint,before end of quarter
+later,in a fast-follow,post-launch
+think,ideate,strategize
+thinking,ideating,strategizing
+use,leverage,operationalize
+using,leveraging,operationalizing
+help,empower,enable
+improve,optimize,uplevel
+improving,optimizing,upleveling
+start,kick off,spin up
+started,kicked off,spun up
+finish,land,ship
+finished,landed,shipped
+team,cross-functional task force,tiger team,pod
+teams,cross-functional task forces,tiger teams,pods
+together,in lockstep,cross-functionally

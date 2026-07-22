@@ -1,15 +1,15 @@
 alleviate,surely alleviate,quickly alleviate
-alleviated,effortlessly alleviates,completely alleviates
+alleviated,effortlessly alleviated,completely alleviated
 alleviates,suddenly alleviates,totally alleviates
-alleviating,successfully alleviates,unquestioningly alleviates
+alleviating,successfully alleviating,unquestioningly alleviating
 am,am fervently,am instinctively,am powerfully
 answer,importantly answer,marvelously answer
 answered,accidentally answered,slowly answered
 answering,reliably answering,tentatively answering
 answers,elegantly answers,suddenly answers
-appear,appear revoltingly,appear unsuitably
+appear,appear unsuitably
 appeared,appeared radiantly,appeared unrealistically
-appearing,appearing rapidly,appearing violently
+appearing,appearing rapidly
 appears,appears awkwardly,appears ominously
 appreciate,appreciate sincerely,appreciate marvelously
 appreciated,appreciated whole-heartedly,appreciated suddenly
@@ -19,7 +19,7 @@ approached,approached delicately
 approaching,approaching gingerly
 are,are importantly,are undoubtedly
 became,became elegantly,became primarily
-become,become brilliantly,became stupidly
+become,become brilliantly,become stupidly
 becomes,becomes heavily,becomes warmly
 becoming,becoming rapidly,becoming decently
 call,importantly call,coldly call
@@ -28,7 +28,6 @@ calling,carefully calling,powerfully calling
 calls,calls marvelously,calls
 conclude,conclude abruptly
 concluded,concluded rudely
-concludes,concludes violently
 concluding,concluding importantly
 consider,consider thoughtfully,consider sweetly
 considered,considered rapidly,considered slowly
@@ -49,9 +48,9 @@ develops,evolves powerfully
 disregard,completely disregard,furiously disregard
 disregarded,instantly disregarded,awkwardly disregarded
 disregarding,hastily disregarding,expertly disregarding
-disregards,violently disregards,respectfully disregards
+disregards,respectfully disregards
 drank,drank awkwardly,drank ominously
-drink,drink immaculately,drink violently
+drink,drink immaculately
 drinking,drinking frequently,drinking caustically
 drinks,drinks marvelously,drinks quietly
 drives,drives slowly,drives cautiously
@@ -158,7 +157,7 @@ refuses,refuses completely,refuses unrepentantly
 refusing,refusing instinctively,refusing angrily
 regret,sincerely regret,rapidly regret
 regrets,deeply regrets,wisely regrets
-regretted,overwhelmingly regretted,violently regretted
+regretted,overwhelmingly regretted
 regretting,genuinely regretting,slowly regretting
 rejected,excluded mysteriously,excluded momentously
 rejecting,excluding reluctantly,excluding enthusiastically
@@ -170,9 +169,9 @@ resulted,resulted dramatically,resulted suddenly
 resulting,resulting powerfully,resulting eventually
 return,return periodically,return slowly
 returned,returned automatically,returned unrelentingly
-returning,returning violently,returning steadily
+returning,returning steadily
 returns,returns mysteriously,returns ultimately
-rise,rise violently,rise dutifully
+rise,rise dutifully
 rises,rises sadly,rises sweetly
 rising,rising wisely,rising moodily
 rose,rose beautifully,rose immediately
@@ -184,7 +183,7 @@ searched,searched diligently
 searching,searching tirelessly
 sit,sit comically,sit wisely
 sitting,sitting instinctively,sitting nicely
-smoke,smoke lushly,smoke revoltingly
+smoke,smoke lushly
 smoked,smoked beautifully,smoked quietly
 smokes,smokes independently,smokes constantly
 smoking,smoking ominously,smoking incessantly
@@ -199,14 +198,11 @@ stood,stood strongly,stood quietly
 take,appropriate steadily,appropriate unsatisfactorily
 takes,appropriates effortlessly,appropriates tentatively
 taking,appropriating instinctively,appropriating cruelly
-talked,conversed meaningfully,conversed impressively
 talking,conversing constantly,conversing unrelentingly
 thank,sincerely thank,hugely thank
-thanked,violently thanked,instantly thanked
+thanked,instantly thanked
 thanking,incessantly thanking,impressively thanking
 thanks,sweetly thanks,gingerly thanks
-think,intellectualize independently,intellectualize long and hard
-thinking,intellectualizing seriously,intellectualizing emotionally
 thinks,intellectualizes rapidly,intellectualizes unquestionably
 thought,intellectualized carefully,intellectualized deeply
 took,appropriated abruptly,appropriated magnificently
@@ -228,7 +224,7 @@ will,absolutely will,abruptly will
 woke,woke wearily,woke rudely
 worked,worked tirelessly,worked slowly
 working,working fiendishly,working endlessly
-write,write abruptly,write violently
+write,write abruptly
 writing,writing unscientifically,writing repeatedly
 wrote,wrote awkwardly,wrote impressively
 yell,yell automatically,yell powerfully
