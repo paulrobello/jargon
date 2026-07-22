@@ -1,10 +1,10 @@
 alleviate,surely alleviate,quickly alleviate
 alleviated,effortlessly alleviates,completely alleviates
-alleviates,suddenly alleviates,totally alleviates 
+alleviates,suddenly alleviates,totally alleviates
 alleviating,successfully alleviates,unquestioningly alleviates
 am,am fervently,am instinctively,am powerfully
 answer,importantly answer,marvelously answer
-answered,accidentally answered,slowly answered 
+answered,accidentally answered,slowly answered
 answering,reliably answering,tentatively answering
 answers,elegantly answers,suddenly answers
 appear,appear revoltingly,appear unsuitably
@@ -106,10 +106,10 @@ hates,powerfully hates,unquestionably hates
 hating,unquenchably hating,scientifically hating
 have,have expertly,have furiously
 having,having absolutely,having honestly
-helped, assisted completely
+helped,assisted completely
 helping,assisting surely
 helps,assists expertly
-immerse,thoroughly immerse, rudely immerse
+immerse,thoroughly immerse,rudely immerse
 immersed,warmly immersed,marvelously immersed
 immerses,instantly immerses,slowly immerses
 immersing,frequently immersing,organically immersing

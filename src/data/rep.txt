@@ -85,7 +85,7 @@
 74,seventy four
 75,seventy five
 76,seventy six
-77,seventy seven 
+77,seventy seven
 78,seventy eight
 79,seventy nine
 8,eight
@@ -1306,7 +1306,7 @@ moon,natural satellite of Earth
 moonlight,electromagnetic radiation from the natural satellite of Earth
 moonlighting,making ends meet
 moons,natural satellites of Earth
-morale,esprit de corps ,willingness to work without rewards
+morale,esprit de corps,willingness to work without rewards
 moreover,moreover and in any event
 morning,pre-noon,before the midday meal
 mornings,times before
