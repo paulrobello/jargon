@@ -65,7 +65,7 @@ function boundaryWrap(key: string): string {
 function buildMatcher(data: JargonData): RegExp {
   const keys = [...data.adv.keys()].sort((a, b) => b.length - a.length).map(boundaryWrap);
   const keyAlternation = keys.length > 0 ? `|(${keys.join('|')})` : '';
-  return new RegExp(`\\b(a|an|the)\\b${keyAlternation}`, 'gi');
+  return new RegExp(`(?<![\\w-])(a|an|the)(?![\\w-])${keyAlternation}`, 'gi');
 }
 
 /** Uppercase the replacement's first letter when the source word had one. */
@@ -87,11 +87,23 @@ function articleFor(word: string): 'a' | 'an' {
   return /^[aeiou]/i.test(word) ? 'an' : 'a';
 }
 
-/** Fix a/an agreement against whatever word now follows the article. */
+/**
+ * Marks the start of engine-substituted text so a/an agreement (below) can be
+ * scoped to only what the engine changed, never to text the user typed as-is.
+ */
+const SENTINEL = '\u0000';
+
+/**
+ * Fix a/an agreement, but only immediately before a sentinel-marked word —
+ * i.e. only where the engine itself substituted the following word. Articles
+ * preceding untouched input are never rewritten, since acronym/silent-h
+ * pronunciation can't be inferred from spelling alone.
+ */
 function fixArticles(text: string): string {
   return text.replace(
-    /\b(a|an)([ \t]+)([A-Za-z][\w-]*)/gi,
-    (_match, article: string, gap: string, next: string) => `${matchCase(article, articleFor(next))}${gap}${next}`,
+    new RegExp(`(?<![\\w-])(a|an)([ \\t]+)${SENTINEL}([A-Za-z][\\w-]*)`, 'gi'),
+    (_match, article: string, gap: string, next: string) =>
+      `${matchCase(article, articleFor(next))}${gap}${SENTINEL}${next}`,
   );
 }
 
@@ -113,6 +125,7 @@ export function jargonate(
   rng: Rng = Math.random,
 ): string {
   let text = content.length > MAX_INPUT_LENGTH ? content.slice(0, MAX_INPUT_LENGTH) : content;
+  text = text.split(SENTINEL).join('');
 
   text = text.replace(buildMatcher(data), (match, article: string | undefined) => {
     if (article !== undefined) {
@@ -123,10 +136,10 @@ export function jargonate(
     }
     const replacements = data.adv.get(match.toLowerCase());
     if (!replacements || !rolls(level, rng)) return match;
-    return matchCase(match, randomItem(replacements, rng));
+    return `${SENTINEL}${matchCase(match, randomItem(replacements, rng))}`;
   });
 
-  text = normalizeWhitespace(fixArticles(text));
+  text = normalizeWhitespace(fixArticles(text).split(SENTINEL).join(''));
 
   if (data.sen.length === 0) return text;
   return `${text}\n\n${randomItem(data.sen, rng)}`;

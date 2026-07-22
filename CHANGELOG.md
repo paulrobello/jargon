@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - This changelog.
 - Single-pass cascade-proof jargon engine that prevents re-substitution of already-replaced text, ensuring replacements do not compound unpredictably.
 - Grammatical refinements: automatic a/an agreement based on following word's first letter, and capitalization preservation when replacing capitalized words.
-- Five-label density slider with inline tick labels (Plain English, Light Jargon, Moderate, Heavy Synergy, Maximum Synergy) on the slider line, with the active density label highlighted, replacing the top-right numerical readout.
+- Five-label density slider with inline tick labels (Plain English, Light, Moderate, Heavy, Maximum Synergy) on the slider line, with the active density label highlighted, replacing the top-right numerical readout.
 
 ### Changed
 - `.github/workflows/ci.yml` now runs the Node/TypeScript toolchain (format check, lint, typecheck, test, build) instead of PHP lint + PHPUnit.

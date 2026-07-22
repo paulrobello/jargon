@@ -54,8 +54,8 @@ Then open `http://localhost:8812/` in a browser. Type a sentence into **Original
 
 The word-list `.txt` files are bundled into the JS build as raw text (`src/loadData.ts`) and parsed into an adjective list, a filler-sentence list, and a word&rarr;replacement table (`src/jargonate.ts`). Clicking **Jargonate** runs `jargonate()`:
 
-1. Optionally inserts a random adjective after standalone occurrences of "a", "the", or "is".
-2. Walks the word&rarr;replacement table and swaps matching whole words for a randomly chosen jargon replacement (or leaves the word unchanged, depending on the roll).
+1. Runs a single left-to-right pass over one combined matcher covering standalone "a"/"an"/"the" plus every word&rarr;replacement table key, so a replacement is never re-substituted by a later part of the pass. Standalone "a"/"an"/"the" optionally get a random adjective inserted after them; table keys optionally swap to a randomly chosen jargon replacement (each roll may also leave the word unchanged).
+2. Re-applies a/an agreement, but only to articles immediately preceding text the pass above just inserted or replaced &mdash; untouched input is never rewritten.
 3. Appends a random closing filler sentence.
 
 The "Buzzword Density" slider (0 = Plain English, 100 = Maximum Synergy) is inverted internally to the original substitution-frequency parameter, where a *lower* internal value means substitutions fire *more* often.
