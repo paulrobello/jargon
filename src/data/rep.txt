@@ -1125,7 +1125,7 @@ keeps,continues
 key,lock access device
 keyboard,keys to success
 keys,lock access devices
-know,have knowledge of
+know,recognize,fully appreciate
 knowledge,acquisition of information
 land,real estate
 lands,real estates
@@ -1858,7 +1858,6 @@ superiors,higher-salaried in-duh-viduals
 supervisor,jailer
 supervisors,jailers
 supplies,employee benefits
-support,supportance
 sure,positive beyond a reasonable doubt
 survey,exhaustive research compendium
 surveys,exhaustive research compendiums
@@ -2118,17 +2117,13 @@ coffee,productivity fluid,liquid alignment
 boss,people leader,accountability partner
 employees,human capital,individual contributors
 customers,valued stakeholders,revenue partners
-plan,roadmap,strategic framework
-plans,roadmaps,strategic frameworks
 goal,north-star metric,key result
 goals,north-star metrics,key results
 soon,within the current sprint,before end of quarter
 later,in a fast-follow,post-launch
-think,ideate,strategize
+think,assess,posit
 thinking,ideating,strategizing
-use,leverage,operationalize
 using,leveraging,operationalizing
-help,empower,enable
 improve,optimize,uplevel
 improving,optimizing,upleveling
 start,kick off,spin up
@@ -2138,3 +2133,6 @@ finished,landed,shipped
 team,cross-functional task force,tiger team,pod
 teams,cross-functional task forces,tiger teams,pods
 together,in lockstep,cross-functionally
+have to,must necessarily,find it necessary to
+has to,must necessarily,finds it necessary to
+had to,found it necessary to,had no strategic alternative but to

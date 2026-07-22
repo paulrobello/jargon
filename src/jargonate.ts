@@ -82,6 +82,12 @@ function matchCase(source: string, replacement: string): string {
  */
 const CONSONANT_SOUND = /^(uniq|unit|univ|use|user|one|once|eu|utop|ubiq)/i;
 
+/** Words after which inserting an adjective would read wrong (e.g. "the same way"). */
+const ARTICLE_INSERTION_STOPWORD = /^\s+(?:same|other|only|own|very|next|last|first|latter|former|aforementioned)\b/i;
+
+/** A capitalized word right before a numeric key marks it as a product/version number, not a count. */
+const CAPITALIZED_LEAD_IN = /(?:^|[\s(])[A-Z][\w&.-]*[ \t]+$/;
+
 function articleFor(word: string): 'a' | 'an' {
   if (CONSONANT_SOUND.test(word)) return 'a';
   return /^[aeiou]/i.test(word) ? 'an' : 'a';
@@ -114,6 +120,11 @@ function normalizeWhitespace(text: string): string {
     .replace(/^[ \t]+|[ \t]+$/gm, '');
 }
 
+/** A letter glued directly to '%' (e.g. from a spelled-out number) reads as "fifty percent". */
+function smoothPercent(text: string): string {
+  return text.replace(/([a-zA-Z])%/g, '$1 percent');
+}
+
 /**
  * Single left-to-right pass: each match is replaced at most once and the
  * replacement text is emitted verbatim, so substitutions can never cascade.
@@ -127,19 +138,27 @@ export function jargonate(
   let text = content.length > MAX_INPUT_LENGTH ? content.slice(0, MAX_INPUT_LENGTH) : content;
   text = text.split(SENTINEL).join('');
 
-  text = text.replace(buildMatcher(data), (match, article: string | undefined) => {
+  text = text.replace(buildMatcher(data), (match: string, ...rest: unknown[]) => {
+    // Capture-group count varies with whether any table keys exist (the key
+    // alternation group is only added when data.adv is non-empty), so pull
+    // offset/string from the end rather than assuming a fixed arity.
+    const string = rest[rest.length - 1] as string;
+    const offset = rest[rest.length - 2] as number;
+    const article = rest[0] as string | undefined;
     if (article !== undefined) {
       if (data.adj.length === 0 || !rolls(level, rng)) return match;
+      if (ARTICLE_INSERTION_STOPWORD.test(string.slice(offset + match.length))) return match;
       const adjective = randomItem(data.adj, rng);
       const agreed = article.toLowerCase() === 'the' ? article : matchCase(article, articleFor(adjective));
       return `${agreed} ${adjective}`;
     }
     const replacements = data.adv.get(match.toLowerCase());
     if (!replacements || !rolls(level, rng)) return match;
+    if (/^\d+$/.test(match) && CAPITALIZED_LEAD_IN.test(string.slice(0, offset))) return match;
     return `${SENTINEL}${matchCase(match, randomItem(replacements, rng))}`;
   });
 
-  text = normalizeWhitespace(fixArticles(text).split(SENTINEL).join(''));
+  text = normalizeWhitespace(smoothPercent(fixArticles(text).split(SENTINEL).join('')));
 
   if (data.sen.length === 0) return text;
   return `${text}\n\n${randomItem(data.sen, rng)}`;

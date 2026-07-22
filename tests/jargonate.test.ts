@@ -142,3 +142,132 @@ describe('jargonate assembly', () => {
     expect(result).not.toContain('\u0000');
   });
 });
+
+describe('output-coherence fixes', () => {
+  describe('Fix 1 — percent smoothing', () => {
+    it('turns a substituted-word-plus-percent into "<word> percent"', () => {
+      const data = makeData({ adv: new Map([['50', ['fifty']]]) });
+      const result = jargonate('We are at 50% now.', data, 0, alwaysRng);
+      expect(result).toContain('fifty percent now');
+      expect(result).not.toContain('fifty%');
+    });
+
+    it('leaves an untouched numeric percent (no matching key) as-is', () => {
+      const data = makeData();
+      const result = jargonate('99% pure', data, 0, alwaysRng);
+      expect(result).toContain('99% pure');
+    });
+  });
+
+  describe('Fix 2 — version-number guard', () => {
+    it('does not spell out a purely numeric key immediately preceded by a capitalized word', () => {
+      const data = makeData({
+        adv: new Map([
+          ['5', ['five']],
+          ['3', ['three']],
+        ]),
+      });
+      const result = jargonate('Fable 5 is here.', data, 0, alwaysRng);
+      expect(result).toContain('Fable 5');
+    });
+
+    it('still spells out a numeric key not preceded by a capitalized word', () => {
+      const data = makeData({
+        adv: new Map([
+          ['5', ['five']],
+          ['3', ['three']],
+        ]),
+      });
+      const result = jargonate('we announced 3 things', data, 0, alwaysRng);
+      expect(result).toContain('we announced three things');
+    });
+  });
+
+  describe('Fix 3 — article-insertion stopwords', () => {
+    it('does not insert an adjective between an article and "same"', () => {
+      const data: JargonData = { adj: ['synergistic'], sen: ['CLOSER.'], adv: new Map() };
+      const result = jargonate('the same way works', data, 0, alwaysRng);
+      expect(result).toContain('the same way');
+    });
+
+    it('still inserts an adjective before an ordinary noun', () => {
+      const data: JargonData = { adj: ['synergistic'], sen: ['CLOSER.'], adv: new Map() };
+      const result = jargonate('the plan works', data, 0, alwaysRng);
+      expect(result).toContain('the synergistic plan');
+    });
+  });
+
+  describe('Fix 4 — modal-safe multi-word rows', () => {
+    it('prefers the phrase key "have to" over the shorter single-word key "have"', () => {
+      const data = makeData({
+        adv: new Map([
+          ['have', ['have furiously']],
+          ['have to', ['must necessarily']],
+        ]),
+      });
+      const result = jargonate('we have to open it', data, 0, alwaysRng);
+      expect(result).toContain('we must necessarily open it');
+      expect(result).not.toContain('furiously');
+    });
+
+    it('never wedges an adverb into "have/has/had ... to" on the real data table', () => {
+      const data = loadJargonData();
+      for (let i = 0; i < 25; i++) {
+        const result = jargonate('We have to open a support ticket.', data, 0);
+        expect(result).not.toMatch(/\bha(?:ve|s|d) \w+ly to\b/i);
+      }
+    });
+  });
+
+  describe('Fix 5 — clause-safe and ambiguity fixes (real data)', () => {
+    it('"know" replacements are clause-safe, not just object-safe', () => {
+      const data = loadJargonData();
+      for (let i = 0; i < 25; i++) {
+        const result = jargonate('I know there has been much discussion over this.', data, 0);
+        expect(result).not.toMatch(/have knowledge of there/i);
+      }
+    });
+
+    it('drops the noun/verb-ambiguous "use" row ("found use of it")', () => {
+      const data = loadJargonData();
+      for (let i = 0; i < 25; i++) {
+        const result = jargonate('who have found use of it', data, 0);
+        expect(result).not.toMatch(/operationalize of it/i);
+        expect(result).not.toMatch(/\bleverage of it\b/i);
+      }
+    });
+
+    it('drops the nonsense "supportance" replacement for the verb "support"', () => {
+      const data = loadJargonData();
+      for (let i = 0; i < 25; i++) {
+        const result = jargonate('we need to support this ticket', data, 0);
+        expect(result).not.toMatch(/supportance/i);
+      }
+    });
+
+    it('drops the "help,empower,enable" row ("need help" breaking to "need empower")', () => {
+      const data = loadJargonData();
+      for (let i = 0; i < 25; i++) {
+        const result = jargonate('we need help with this', data, 0);
+        expect(result).not.toMatch(/\b(?:empower|enable)\b/i);
+      }
+    });
+
+    it('"plan"/"plans" no longer produce a missing-verb sentence for "plan to X"', () => {
+      const data = loadJargonData();
+      for (let i = 0; i < 25; i++) {
+        const result = jargonate('we plan to launch next month', data, 0);
+        expect(result).not.toMatch(/\bstrategic framework to\b/i);
+        expect(result).not.toMatch(/\broadmap to\b/i);
+      }
+    });
+
+    it('"think" replacements read naturally before a following clause', () => {
+      const data = loadJargonData();
+      for (let i = 0; i < 25; i++) {
+        const result = jargonate('I think we should proceed', data, 0);
+        expect(result).not.toMatch(/\b(?:ideate|strategize) we\b/i);
+      }
+    });
+  });
+});

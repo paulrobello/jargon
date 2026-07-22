@@ -36,5 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The `?action=` parameter previously accepted any non-empty value; it now validates against `jargonate` and rejects anything else with `400 Bad Request`.
 - Level 0 maximum-density setting now correctly applies maximum substitution frequency; previously fell back to default level.
 - Curated and expanded word lists: `adj.txt` rebuilt as 140 corporate-buzzword entries; 12 new consultant closers in `sen.txt`; `adv.txt` and `rep.txt` grammar-fixed with non-sequiturs removed and 39 new corporate-parody rows added with clause-safe conjunction replacements.
+- Output-coherence: percent smoothing (`50%` → `fifty percent`, not `fifty%`), a version-number guard so product/version numbers like "Fable 5" no longer get spelled out, and an article-insertion stopword list so no adjective gets wedged before words like "same".
+- Modal-safe phrase rows for "have to"/"has to"/"had to" so an adverb no longer splits the modal (e.g. "have furiously to"), and clause-safe replacements for "know"/"think"; removed noun/verb-ambiguous or nonsense rows (`use`, `support`, `help`, `plan`/`plans`) that broke on verb usage or clause objects.
 
 _The three items in the "Fixed" section preceding the Level 0 fix describe issues with the PHP implementation before it was retired; they no longer apply to the current client-side app, which has no server endpoint._
