@@ -1,0 +1,15 @@
+{
+    "name": "par/jargonator",
+    "description": "PAR Jargonator - turns submitted text into corporate jargon",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "test": "phpunit --colors=never tests"
+    }
+}

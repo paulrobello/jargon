@@ -1,6 +1,10 @@
 <?php
 
-$action=@trim($_GET["action"]);
+error_reporting(E_ALL);
+ini_set('display_errors', '0');
+ini_set('log_errors', '1');
+
+$action=trim($_GET["action"] ?? '');
 if (empty($action)){
 ?>
 <!doctype html>
@@ -8,19 +12,15 @@ if (empty($action)){
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="PAR Realtime Chat">
+    <meta name="description" content="PAR Jargonator – turns your text into corporate jargon.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>PAR Jargonator</title>
     
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 <h1>PAR JARGONATOR</h1>
@@ -63,32 +63,31 @@ if (!empty($_SERVER['HTTP_ORIGIN'])) {
     }
 }
 
-function pickRand($list,$prepend=' ',$append=' ', $default = '', $level = 85){
-#die("<pre>\n".print_r($list,true)."</pre>");
-  return ($default === 'X' || rand(0,100)>$level) ? $prepend . $list[rand(0,count($list)-1)] . $append : $default;
+define('DEFAULT_JARGON_LEVEL', 85);
+
+function pickRand($list,$prepend=' ',$append=' ', $default = '', $level = DEFAULT_JARGON_LEVEL, $forceSubstitute = false){
+  return ($forceSubstitute || mt_rand(0,100)>$level) ? $prepend . $list[mt_rand(0,count($list)-1)] . $append : $default;
 }
-  
-function jargonate($content,$level = 85){
-  if (!$level) $level=85;
-  include dirname( __FILE__ ) . '/jargonator.php';
-#die("<pre>\n".print_r($adj,true)."</pre>");  
-#    $content=preg_replace_callback('@( (?<!of )the )@',function($match){
-#      return ' @'.$this->prep[rand(0,count($this->prep)-1)].'@'.$match[0];
-#    },$content);
-    $content=preg_replace_callback('@( a | the | is )@i',function($match) use ($adj){
+
+function jargonate($content,$level = DEFAULT_JARGON_LEVEL){
+  if (!$level) $level=DEFAULT_JARGON_LEVEL;
+  if (strlen($content) > 8192) $content = substr($content, 0, 8192);
+  $data = include dirname( __FILE__ ) . '/jargonator.php';
+  $adj = $data['adj'];
+  $adv = $data['adv'];
+  $sen = $data['sen'];
+    $content=preg_replace_callback('@\b(a|the|is)\b@i',function($match) use ($adj, $level){
       return $match[0]. pickRand($adj,'',' ','',$level);
     },$content);
-#    return $content;
-    foreach ($adv as $w=>$list){
-      $content=preg_replace_callback('@( '.$w.' )@i',function($match) use ($list){
+    foreach ($adv as $word=>$list){
+      $content=preg_replace_callback('@\b'.preg_quote($word, '@').'\b@i',function($match) use ($list, $level){
         return pickRand($list,' ',' ',$match[0],$level);
       },$content);
     }
-#    return $content;    
-    $content.="\n\n".pickRand($sen,'','','X');
+    $content.="\n\n".pickRand($sen,'','','',DEFAULT_JARGON_LEVEL,true);
     return $content;
 }
 
 header('Content-Type: text/plain; charset=UTF-8');
-echo htmlspecialchars(jargonate($_POST["in"],(int)@$_GET['level']), ENT_QUOTES, 'UTF-8');
+echo htmlspecialchars(jargonate($_POST['in'] ?? '',(int)($_GET['level'] ?? 0)), ENT_QUOTES, 'UTF-8');
 ?>
